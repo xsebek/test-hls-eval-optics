@@ -1,0 +1,267 @@
+[client] run command: "/Users/xsebek/.ghcup/bin/haskell-language-server-wrapper --lsp"
+[client] debug command: "/Users/xsebek/.ghcup/bin/haskell-language-server-wrapper --lsp"
+[client] server cwd: undefined
+Found "$TMP/hie.yaml" for "$TMP/a"
+Module "$TMP/a" is loaded by Cradle: Cradle {cradleRootDir = "$TMP", cradleOptsProg = CradleAction: Cabal}
+Run entered for haskell-language-server-wrapper(haskell-language-server-wrapper) Version 0.6.0.0, Git revision 372a12e797069dc3ac4fa33dcaabe3b992999d7c (dirty) x86_64 ghc-8.10.1
+Current directory: $TMP
+Operating system: darwin
+Arguments: ["--lsp"]
+Cradle directory: $TMP
+Cradle type: Cabal
+
+Tool versions found on the $PATH
+cabal:		3.2.0.0
+stack:		Not found
+ghc:		8.10.2
+
+
+Consulting the cradle to get project GHC version...
+Project GHC version: 8.10.2
+haskell-language-server exe candidates: ["haskell-language-server-8.10.2","haskell-language-server-8.10","haskell-language-server"]
+Launching haskell-language-server exe at:/Users/xsebek/.ghcup/bin/haskell-language-server-8.10.2
+haskell-language-server version: 0.6.0.0 (GHC: 8.10.2) (PATH: /Users/xsebek/.ghcup/bin/haskell-language-server-8.10.2~0.6.0) (GIT hash: 372a12e797069dc3ac4fa33dcaabe3b992999d7c)
+Starting (haskell-language-server)LSP server...
+  with arguments: LspArguments {argLSP = True, argsCwd = Nothing, argFiles = [], argsShakeProfiling = Nothing, argsTesting = False, argsExamplePlugin = False, argsDebugOn = False, argsLogFile = Nothing, argsThreads = 0, argsProjectGhcVersion = False}
+  with plugins: [PluginId "brittany",PluginId "eval",PluginId "floskell",PluginId "fourmolu",PluginId "ghcide",PluginId "hlint",PluginId "importLens",PluginId "moduleName",PluginId "ormolu",PluginId "pragmas",PluginId "retrie",PluginId "stylish-haskell",PluginId "tactic"]
+  in directory: $TMP
+If you are seeing this in a terminal, you probably should have run ghcide WITHOUT the --lsp option!
+ Started LSP server in 0.06s
+2020-12-13 21:23:46.185661 [ThreadId 17] - Registering ide configuration: IdeConfiguration {workspaceFolders = fromList [NormalizedUri (-4736958181149980466) "file://$TMP"], clientSettings = hashed Nothing}
+2020-12-13 21:23:46.200075 [ThreadId 17] - Configuration changed: Object (fromList [("haskell",Object (fromList [("logFile",String ""),("updateBehavior",String "keep-up-to-date"),("hlintOn",Bool True),("formatOnImportOn",Bool True),("indentationRules",Object (fromList [("enabled",Bool True)])),("liquidOn",Bool False),("languageServerVariant",String "haskell-language-server"),("serverExecutablePath",String "~/.ghcup/bin/haskell-language-server-wrapper"),("diagnosticsOnChange",Bool True),("completionSnippetsOn",Bool True),("maxNumberOfProblems",Number 100.0),("formattingProvider",String "ormolu"),("trace",Object (fromList [("server",String "off")]))]))])
+2020-12-13 21:23:46.203962 [ThreadId 17] - Opened text document: file://$TMP/Main.hs
+2020-12-13 21:23:46.207873 [ThreadId 60] - getClientConfigAction:clientSettings:Just (Object (fromList [("haskell",Object (fromList [("logFile",String ""),("updateBehavior",String "keep-up-to-date"),("hlintOn",Bool True),("formatOnImportOn",Bool True),("indentationRules",Object (fromList [("enabled",Bool True)])),("liquidOn",Bool False),("languageServerVariant",String "haskell-language-server"),("serverExecutablePath",String "~/.ghcup/bin/haskell-language-server-wrapper"),("diagnosticsOnChange",Bool True),("completionSnippetsOn",Bool True),("maxNumberOfProblems",Number 100.0),("formattingProvider",String "ormolu"),("trace",Object (fromList [("server",String "off")]))]))]))
+2020-12-13 21:23:46.208106 [ThreadId 60] - hlint:getIdeas:file:NormalizedFilePath "$TMP/Main.hs"
+2020-12-13 21:23:46.215173 [ThreadId 63] - Consulting the cradle for "Main.hs"
+Output from setting up the cradle Cradle {cradleRootDir = "$TMP", cradleOptsProg = CradleAction: Cabal}
+2020-12-13 21:23:49.433662 [ThreadId 81] - Plugin.makeCodeLens (ideLogger)
+> Resolving dependencies...
+> Build profile: -w ghc-8.10.2 -O1
+> In order, the following will be built (use -v for more details):
+>  - tmp-0.1.0.0 (exe:tmp) (configuration changed)
+> Configuring executable 'tmp' for tmp-0.1.0.0..
+> Preprocessing executable 'tmp' for tmp-0.1.0.0..
+2020-12-13 21:24:02.018934 [ThreadId 63] - Using interface files cache dir: /Users/xsebek/.cache/ghcide/main-ff69a3833a9952d7422f2284419b2692c79fac66
+2020-12-13 21:24:02.020105 [ThreadId 63] - Making new HscEnv[main]
+2020-12-13 21:24:02.059869 [ThreadId 100] - getClientConfigAction:clientSettings:Just (Object (fromList [("haskell",Object (fromList [("logFile",String ""),("updateBehavior",String "keep-up-to-date"),("hlintOn",Bool True),("formatOnImportOn",Bool True),("indentationRules",Object (fromList [("enabled",Bool True)])),("liquidOn",Bool False),("languageServerVariant",String "haskell-language-server"),("serverExecutablePath",String "~/.ghcup/bin/haskell-language-server-wrapper"),("diagnosticsOnChange",Bool True),("completionSnippetsOn",Bool True),("maxNumberOfProblems",Number 100.0),("formattingProvider",String "ormolu"),("trace",Object (fromList [("server",String "off")]))]))]))
+2020-12-13 21:24:02.060282 [ThreadId 100] - hlint:getIdeas:file:NormalizedFilePath "$TMP/Main.hs"
+2020-12-13 21:24:02.305932 [ThreadId 160] - finish: codeLens (took 0.25s)
+2020-12-13 21:24:02.310104 [ThreadId 156] - finish:  (took 0.00s)
+2020-12-13 21:24:02.317185 [ThreadId 161] - finish: ModuleName.ghcSession (took 0.00s)
+2020-12-13 21:24:02.319785 [ThreadId 168] - finish: ModuleName.GetParsedModule (took 0.00s)
+2020-12-13 21:24:28.320436 [ThreadId 176] - finish: runEvalCmd.ghcSession (took 0.00s)
+2020-12-13 21:24:28.321188 [ThreadId 178] - finish: runEvalCmd.getModSummary (took 0.00s)
+haskell-language-server-wrapper: callProcess: /Users/xsebek/.ghcup/bin/haskell-language-server-8.10.2 "--lsp" (exit -11): failed
+[Info  - 9:24:29 PM] Connection to server got closed. Server will restart.
+[Error - 9:24:29 PM] Request workspace/executeCommand failed.
+Error: Connection got disposed.
+	at Object.dispose (/Users/xsebek/.vscode/extensions/haskell.haskell-1.2.0/dist/extension.js:1:90964)
+	at Object.dispose (/Users/xsebek/.vscode/extensions/haskell.haskell-1.2.0/dist/extension.js:1:74243)
+	at D.handleConnectionClosed (/Users/xsebek/.vscode/extensions/haskell.haskell-1.2.0/dist/extension.js:1:74417)
+	at D.handleConnectionClosed (/Users/xsebek/.vscode/extensions/haskell.haskell-1.2.0/dist/extension.js:247:9685)
+	at t (/Users/xsebek/.vscode/extensions/haskell.haskell-1.2.0/dist/extension.js:1:72568)
+	at n.invoke (/Users/xsebek/.vscode/extensions/haskell.haskell-1.2.0/dist/extension.js:1:233221)
+	at i.fire (/Users/xsebek/.vscode/extensions/haskell.haskell-1.2.0/dist/extension.js:1:233951)
+	at G (/Users/xsebek/.vscode/extensions/haskell.haskell-1.2.0/dist/extension.js:1:82879)
+	at n.invoke (/Users/xsebek/.vscode/extensions/haskell.haskell-1.2.0/dist/extension.js:1:233221)
+	at i.fire (/Users/xsebek/.vscode/extensions/haskell.haskell-1.2.0/dist/extension.js:1:233951)
+	at u.fireClose (/Users/xsebek/.vscode/extensions/haskell.haskell-1.2.0/dist/extension.js:1:252684)
+	at Socket.<anonymous> (/Users/xsebek/.vscode/extensions/haskell.haskell-1.2.0/dist/extension.js:1:253441)
+	at Socket.emit (events.js:228:7)
+	at Pipe.<anonymous> (net.js:664:12)
+Found "$TMP/hie.yaml" for "$TMP/a"
+Module "$TMP/a" is loaded by Cradle: Cradle {cradleRootDir = "$TMP", cradleOptsProg = CradleAction: Cabal}
+Run entered for haskell-language-server-wrapper(haskell-language-server-wrapper) Version 0.6.0.0, Git revision 372a12e797069dc3ac4fa33dcaabe3b992999d7c (dirty) x86_64 ghc-8.10.1
+Current directory: $TMP
+Operating system: darwin
+Arguments: ["--lsp"]
+Cradle directory: $TMP
+Cradle type: Cabal
+
+Tool versions found on the $PATH
+cabal:		3.2.0.0
+stack:		Not found
+ghc:		8.10.2
+
+
+Consulting the cradle to get project GHC version...
+Project GHC version: 8.10.2
+haskell-language-server exe candidates: ["haskell-language-server-8.10.2","haskell-language-server-8.10","haskell-language-server"]
+Launching haskell-language-server exe at:/Users/xsebek/.ghcup/bin/haskell-language-server-8.10.2
+haskell-language-server version: 0.6.0.0 (GHC: 8.10.2) (PATH: /Users/xsebek/.ghcup/bin/haskell-language-server-8.10.2~0.6.0) (GIT hash: 372a12e797069dc3ac4fa33dcaabe3b992999d7c)
+Starting (haskell-language-server)LSP server...
+  with arguments: LspArguments {argLSP = True, argsCwd = Nothing, argFiles = [], argsShakeProfiling = Nothing, argsTesting = False, argsExamplePlugin = False, argsDebugOn = False, argsLogFile = Nothing, argsThreads = 0, argsProjectGhcVersion = False}
+  with plugins: [PluginId "brittany",PluginId "eval",PluginId "floskell",PluginId "fourmolu",PluginId "ghcide",PluginId "hlint",PluginId "importLens",PluginId "moduleName",PluginId "ormolu",PluginId "pragmas",PluginId "retrie",PluginId "stylish-haskell",PluginId "tactic"]
+  in directory: $TMP
+If you are seeing this in a terminal, you probably should have run ghcide WITHOUT the --lsp option!
+ Started LSP server in 0.01s
+2020-12-13 21:24:30.656689 [ThreadId 18] - Registering ide configuration: IdeConfiguration {workspaceFolders = fromList [NormalizedUri (-4736958181149980466) "file://$TMP"], clientSettings = hashed Nothing}
+2020-12-13 21:24:30.664024 [ThreadId 18] - Configuration changed: Object (fromList [("haskell",Object (fromList [("logFile",String ""),("updateBehavior",String "keep-up-to-date"),("hlintOn",Bool True),("formatOnImportOn",Bool True),("indentationRules",Object (fromList [("enabled",Bool True)])),("liquidOn",Bool False),("languageServerVariant",String "haskell-language-server"),("serverExecutablePath",String "~/.ghcup/bin/haskell-language-server-wrapper"),("diagnosticsOnChange",Bool True),("completionSnippetsOn",Bool True),("maxNumberOfProblems",Number 100.0),("formattingProvider",String "ormolu"),("trace",Object (fromList [("server",String "off")]))]))])
+2020-12-13 21:24:30.666721 [ThreadId 18] - Opened text document: file://$TMP/Main.hs
+2020-12-13 21:24:30.690214 [ThreadId 52] - getClientConfigAction:clientSettings:Just (Object (fromList [("haskell",Object (fromList [("logFile",String ""),("updateBehavior",String "keep-up-to-date"),("hlintOn",Bool True),("formatOnImportOn",Bool True),("indentationRules",Object (fromList [("enabled",Bool True)])),("liquidOn",Bool False),("languageServerVariant",String "haskell-language-server"),("serverExecutablePath",String "~/.ghcup/bin/haskell-language-server-wrapper"),("diagnosticsOnChange",Bool True),("completionSnippetsOn",Bool True),("maxNumberOfProblems",Number 100.0),("formattingProvider",String "ormolu"),("trace",Object (fromList [("server",String "off")]))]))]))
+2020-12-13 21:24:30.690468 [ThreadId 52] - hlint:getIdeas:file:NormalizedFilePath "$TMP/Main.hs"
+2020-12-13 21:24:30.69102 [ThreadId 60] - Consulting the cradle for "Main.hs"
+Output from setting up the cradle Cradle {cradleRootDir = "$TMP", cradleOptsProg = CradleAction: Cabal}
+2020-12-13 21:24:33.204834 [ThreadId 77] - Plugin.makeCodeLens (ideLogger)
+> Resolving dependencies...
+> Build profile: -w ghc-8.10.2 -O1
+> In order, the following will be built (use -v for more details):
+>  - tmp-0.1.0.0 (exe:tmp) (configuration changed)
+> Configuring executable 'tmp' for tmp-0.1.0.0..
+> Preprocessing executable 'tmp' for tmp-0.1.0.0..
+2020-12-13 21:24:44.781946 [ThreadId 60] - Using interface files cache dir: /Users/xsebek/.cache/ghcide/main-ff69a3833a9952d7422f2284419b2692c79fac66
+2020-12-13 21:24:44.78215 [ThreadId 60] - Making new HscEnv[main]
+2020-12-13 21:24:44.811494 [ThreadId 99] - getClientConfigAction:clientSettings:Just (Object (fromList [("haskell",Object (fromList [("logFile",String ""),("updateBehavior",String "keep-up-to-date"),("hlintOn",Bool True),("formatOnImportOn",Bool True),("indentationRules",Object (fromList [("enabled",Bool True)])),("liquidOn",Bool False),("languageServerVariant",String "haskell-language-server"),("serverExecutablePath",String "~/.ghcup/bin/haskell-language-server-wrapper"),("diagnosticsOnChange",Bool True),("completionSnippetsOn",Bool True),("maxNumberOfProblems",Number 100.0),("formattingProvider",String "ormolu"),("trace",Object (fromList [("server",String "off")]))]))]))
+2020-12-13 21:24:44.811763 [ThreadId 99] - hlint:getIdeas:file:NormalizedFilePath "$TMP/Main.hs"
+2020-12-13 21:24:44.930067 [ThreadId 156] - finish: codeLens (took 0.12s)
+2020-12-13 21:24:44.932962 [ThreadId 150] - finish:  (took 0.00s)
+2020-12-13 21:24:44.938994 [ThreadId 162] - finish: ModuleName.ghcSession (took 0.00s)
+2020-12-13 21:24:44.94123 [ThreadId 167] - finish: ModuleName.GetParsedModule (took 0.00s)
+2020-12-13 21:25:14.135743 [ThreadId 174] - finish: runEvalCmd.ghcSession (took 0.00s)
+2020-12-13 21:25:14.137083 [ThreadId 176] - finish: runEvalCmd.getModSummary (took 0.00s)
+haskell-language-server-wrapper: callProcess: /Users/xsebek/.ghcup/bin/haskell-language-server-8.10.2 "--lsp" (exit -11): failed
+[Info  - 9:25:15 PM] Connection to server got closed. Server will restart.
+[Error - 9:25:15 PM] Request workspace/executeCommand failed.
+Error: Connection got disposed.
+	at Object.dispose (/Users/xsebek/.vscode/extensions/haskell.haskell-1.2.0/dist/extension.js:1:90964)
+	at Object.dispose (/Users/xsebek/.vscode/extensions/haskell.haskell-1.2.0/dist/extension.js:1:74243)
+	at D.handleConnectionClosed (/Users/xsebek/.vscode/extensions/haskell.haskell-1.2.0/dist/extension.js:1:74417)
+	at D.handleConnectionClosed (/Users/xsebek/.vscode/extensions/haskell.haskell-1.2.0/dist/extension.js:247:9685)
+	at t (/Users/xsebek/.vscode/extensions/haskell.haskell-1.2.0/dist/extension.js:1:72568)
+	at n.invoke (/Users/xsebek/.vscode/extensions/haskell.haskell-1.2.0/dist/extension.js:1:233221)
+	at i.fire (/Users/xsebek/.vscode/extensions/haskell.haskell-1.2.0/dist/extension.js:1:233951)
+	at G (/Users/xsebek/.vscode/extensions/haskell.haskell-1.2.0/dist/extension.js:1:82879)
+	at n.invoke (/Users/xsebek/.vscode/extensions/haskell.haskell-1.2.0/dist/extension.js:1:233221)
+	at i.fire (/Users/xsebek/.vscode/extensions/haskell.haskell-1.2.0/dist/extension.js:1:233951)
+	at t.StreamMessageWriter.fireClose (/Users/xsebek/.vscode/extensions/haskell.haskell-1.2.0/dist/extension.js:1:255393)
+	at Socket.<anonymous> (/Users/xsebek/.vscode/extensions/haskell.haskell-1.2.0/dist/extension.js:1:255760)
+	at Socket.emit (events.js:223:5)
+	at Pipe.<anonymous> (net.js:664:12)
+Found "$TMP/hie.yaml" for "$TMP/a"
+Module "$TMP/a" is loaded by Cradle: Cradle {cradleRootDir = "$TMP", cradleOptsProg = CradleAction: Cabal}
+Run entered for haskell-language-server-wrapper(haskell-language-server-wrapper) Version 0.6.0.0, Git revision 372a12e797069dc3ac4fa33dcaabe3b992999d7c (dirty) x86_64 ghc-8.10.1
+Current directory: $TMP
+Operating system: darwin
+Arguments: ["--lsp"]
+Cradle directory: $TMP
+Cradle type: Cabal
+
+Tool versions found on the $PATH
+cabal:		3.2.0.0
+stack:		Not found
+ghc:		8.10.2
+
+
+Consulting the cradle to get project GHC version...
+Project GHC version: 8.10.2
+haskell-language-server exe candidates: ["haskell-language-server-8.10.2","haskell-language-server-8.10","haskell-language-server"]
+Launching haskell-language-server exe at:/Users/xsebek/.ghcup/bin/haskell-language-server-8.10.2
+haskell-language-server version: 0.6.0.0 (GHC: 8.10.2) (PATH: /Users/xsebek/.ghcup/bin/haskell-language-server-8.10.2~0.6.0) (GIT hash: 372a12e797069dc3ac4fa33dcaabe3b992999d7c)
+Starting (haskell-language-server)LSP server...
+  with arguments: LspArguments {argLSP = True, argsCwd = Nothing, argFiles = [], argsShakeProfiling = Nothing, argsTesting = False, argsExamplePlugin = False, argsDebugOn = False, argsLogFile = Nothing, argsThreads = 0, argsProjectGhcVersion = False}
+  with plugins: [PluginId "brittany",PluginId "eval",PluginId "floskell",PluginId "fourmolu",PluginId "ghcide",PluginId "hlint",PluginId "importLens",PluginId "moduleName",PluginId "ormolu",PluginId "pragmas",PluginId "retrie",PluginId "stylish-haskell",PluginId "tactic"]
+  in directory: $TMP
+If you are seeing this in a terminal, you probably should have run ghcide WITHOUT the --lsp option!
+ Started LSP server in 0.02s
+2020-12-13 21:25:16.397384 [ThreadId 21] - Registering ide configuration: IdeConfiguration {workspaceFolders = fromList [NormalizedUri (-4736958181149980466) "file://$TMP"], clientSettings = hashed Nothing}
+2020-12-13 21:25:16.399142 [ThreadId 21] - Configuration changed: Object (fromList [("haskell",Object (fromList [("logFile",String ""),("updateBehavior",String "keep-up-to-date"),("hlintOn",Bool True),("formatOnImportOn",Bool True),("indentationRules",Object (fromList [("enabled",Bool True)])),("liquidOn",Bool False),("languageServerVariant",String "haskell-language-server"),("serverExecutablePath",String "~/.ghcup/bin/haskell-language-server-wrapper"),("diagnosticsOnChange",Bool True),("completionSnippetsOn",Bool True),("maxNumberOfProblems",Number 100.0),("formattingProvider",String "ormolu"),("trace",Object (fromList [("server",String "off")]))]))])
+2020-12-13 21:25:16.399932 [ThreadId 21] - Opened text document: file://$TMP/Main.hs
+2020-12-13 21:25:16.402572 [ThreadId 60] - Consulting the cradle for "Main.hs"
+2020-12-13 21:25:16.402803 [ThreadId 62] - getClientConfigAction:clientSettings:Just (Object (fromList [("haskell",Object (fromList [("logFile",String ""),("updateBehavior",String "keep-up-to-date"),("hlintOn",Bool True),("formatOnImportOn",Bool True),("indentationRules",Object (fromList [("enabled",Bool True)])),("liquidOn",Bool False),("languageServerVariant",String "haskell-language-server"),("serverExecutablePath",String "~/.ghcup/bin/haskell-language-server-wrapper"),("diagnosticsOnChange",Bool True),("completionSnippetsOn",Bool True),("maxNumberOfProblems",Number 100.0),("formattingProvider",String "ormolu"),("trace",Object (fromList [("server",String "off")]))]))]))
+2020-12-13 21:25:16.402983 [ThreadId 62] - hlint:getIdeas:file:NormalizedFilePath "$TMP/Main.hs"
+Output from setting up the cradle Cradle {cradleRootDir = "$TMP", cradleOptsProg = CradleAction: Cabal}
+2020-12-13 21:25:18.90913 [ThreadId 79] - Plugin.makeCodeLens (ideLogger)
+> Resolving dependencies...
+> Build profile: -w ghc-8.10.2 -O1
+> In order, the following will be built (use -v for more details):
+>  - tmp-0.1.0.0 (exe:tmp) (configuration changed)
+> Configuring executable 'tmp' for tmp-0.1.0.0..
+> Preprocessing executable 'tmp' for tmp-0.1.0.0..
+2020-12-13 21:25:28.861427 [ThreadId 60] - Using interface files cache dir: /Users/xsebek/.cache/ghcide/main-ff69a3833a9952d7422f2284419b2692c79fac66
+2020-12-13 21:25:28.861615 [ThreadId 60] - Making new HscEnv[main]
+2020-12-13 21:25:28.884143 [ThreadId 99] - getClientConfigAction:clientSettings:Just (Object (fromList [("haskell",Object (fromList [("logFile",String ""),("updateBehavior",String "keep-up-to-date"),("hlintOn",Bool True),("formatOnImportOn",Bool True),("indentationRules",Object (fromList [("enabled",Bool True)])),("liquidOn",Bool False),("languageServerVariant",String "haskell-language-server"),("serverExecutablePath",String "~/.ghcup/bin/haskell-language-server-wrapper"),("diagnosticsOnChange",Bool True),("completionSnippetsOn",Bool True),("maxNumberOfProblems",Number 100.0),("formattingProvider",String "ormolu"),("trace",Object (fromList [("server",String "off")]))]))]))
+2020-12-13 21:25:28.884398 [ThreadId 99] - hlint:getIdeas:file:NormalizedFilePath "$TMP/Main.hs"
+2020-12-13 21:25:28.996523 [ThreadId 162] - finish: codeLens (took 0.11s)
+2020-12-13 21:25:28.997884 [ThreadId 163] - finish:  (took 0.00s)
+2020-12-13 21:25:28.999251 [ThreadId 167] - finish: ModuleName.ghcSession (took 0.00s)
+2020-12-13 21:25:29.001188 [ThreadId 158] - finish: ModuleName.GetParsedModule (took 0.00s)
+2020-12-13 21:26:39.739229 [ThreadId 175] - Plugin.makeCodeLens (ideLogger)
+2020-12-13 21:26:39.741055 [ThreadId 178] - finish:  (took 0.00s)
+2020-12-13 21:26:39.740932 [ThreadId 176] - finish: codeLens (took 0.00s)
+2020-12-13 21:26:39.742075 [ThreadId 180] - finish: ModuleName.ghcSession (took 0.00s)
+2020-12-13 21:26:39.74379 [ThreadId 182] - finish: ModuleName.GetParsedModule (took 0.00s)
+2020-12-13 21:26:58.627111 [ThreadId 187] - Plugin.makeCodeLens (ideLogger)
+2020-12-13 21:26:58.628669 [ThreadId 188] - finish: codeLens (took 0.00s)
+2020-12-13 21:26:58.628772 [ThreadId 190] - finish:  (took 0.00s)
+2020-12-13 21:26:58.629392 [ThreadId 192] - finish: ModuleName.ghcSession (took 0.00s)
+2020-12-13 21:26:58.632506 [ThreadId 193] - finish: ModuleName.GetParsedModule (took 0.00s)
+2020-12-13 21:26:59.077563 [ThreadId 199] - finish: CodeAction (took 0.00s)
+2020-12-13 21:26:59.57427 [ThreadId 204] - finish: CodeAction:PackageExports (took 0.50s)
+2020-12-13 21:26:59.57726 [ThreadId 205] - finish: importLens (took 0.00s)
+2020-12-13 21:26:59.57794 [ThreadId 207] - finish: retrie (took 0.00s)
+2020-12-13 21:26:59.579725 [ThreadId 209] - finish: tactic (took 0.00s)
+2020-12-13 21:26:59.580187 [ThreadId 215] - finish: tactic (took 0.00s)
+2020-12-13 21:26:59.580673 [ThreadId 216] - finish: tactic (took 0.00s)
+2020-12-13 21:27:00.148818 [ThreadId 21] - Modified text document: file://$TMP/Main.hs
+2020-12-13 21:27:00.15631 [ThreadId 274] - getClientConfigAction:clientSettings:Just (Object (fromList [("haskell",Object (fromList [("logFile",String ""),("updateBehavior",String "keep-up-to-date"),("hlintOn",Bool True),("formatOnImportOn",Bool True),("indentationRules",Object (fromList [("enabled",Bool True)])),("liquidOn",Bool False),("languageServerVariant",String "haskell-language-server"),("serverExecutablePath",String "~/.ghcup/bin/haskell-language-server-wrapper"),("diagnosticsOnChange",Bool True),("completionSnippetsOn",Bool True),("maxNumberOfProblems",Number 100.0),("formattingProvider",String "ormolu"),("trace",Object (fromList [("server",String "off")]))]))]))
+2020-12-13 21:27:00.156482 [ThreadId 274] - hlint:getIdeas:file:NormalizedFilePath "$TMP/Main.hs"
+2020-12-13 21:27:00.336138 [ThreadId 21] - Modified text document: file://$TMP/Main.hs
+2020-12-13 21:27:00.340656 [ThreadId 327] - getClientConfigAction:clientSettings:Just (Object (fromList [("haskell",Object (fromList [("logFile",String ""),("updateBehavior",String "keep-up-to-date"),("hlintOn",Bool True),("formatOnImportOn",Bool True),("indentationRules",Object (fromList [("enabled",Bool True)])),("liquidOn",Bool False),("languageServerVariant",String "haskell-language-server"),("serverExecutablePath",String "~/.ghcup/bin/haskell-language-server-wrapper"),("diagnosticsOnChange",Bool True),("completionSnippetsOn",Bool True),("maxNumberOfProblems",Number 100.0),("formattingProvider",String "ormolu"),("trace",Object (fromList [("server",String "off")]))]))]))
+2020-12-13 21:27:00.340875 [ThreadId 327] - hlint:getIdeas:file:NormalizedFilePath "$TMP/Main.hs"
+2020-12-13 21:27:00.585369 [ThreadId 346] - finish: CodeAction (took 0.00s)
+2020-12-13 21:27:00.586088 [ThreadId 351] - finish: CodeAction:PackageExports (took 0.00s)
+2020-12-13 21:27:00.586755 [ThreadId 352] - finish: importLens (took 0.00s)
+2020-12-13 21:27:00.587411 [ThreadId 354] - finish: retrie (took 0.00s)
+2020-12-13 21:27:00.588425 [ThreadId 356] - finish: tactic (took 0.00s)
+2020-12-13 21:27:00.590219 [ThreadId 362] - finish: tactic (took 0.00s)
+2020-12-13 21:27:00.590437 [ThreadId 363] - finish: tactic (took 0.00s)
+2020-12-13 21:27:00.636018 [ThreadId 21] - Modified text document: file://$TMP/Main.hs
+2020-12-13 21:27:00.639848 [ThreadId 408] - getClientConfigAction:clientSettings:Just (Object (fromList [("haskell",Object (fromList [("logFile",String ""),("updateBehavior",String "keep-up-to-date"),("hlintOn",Bool True),("formatOnImportOn",Bool True),("indentationRules",Object (fromList [("enabled",Bool True)])),("liquidOn",Bool False),("languageServerVariant",String "haskell-language-server"),("serverExecutablePath",String "~/.ghcup/bin/haskell-language-server-wrapper"),("diagnosticsOnChange",Bool True),("completionSnippetsOn",Bool True),("maxNumberOfProblems",Number 100.0),("formattingProvider",String "ormolu"),("trace",Object (fromList [("server",String "off")]))]))]))
+2020-12-13 21:27:00.640068 [ThreadId 408] - hlint:getIdeas:file:NormalizedFilePath "$TMP/Main.hs"
+2020-12-13 21:27:00.852964 [ThreadId 21] - Modified text document: file://$TMP/Main.hs
+2020-12-13 21:27:00.857884 [ThreadId 484] - getClientConfigAction:clientSettings:Just (Object (fromList [("haskell",Object (fromList [("logFile",String ""),("updateBehavior",String "keep-up-to-date"),("hlintOn",Bool True),("formatOnImportOn",Bool True),("indentationRules",Object (fromList [("enabled",Bool True)])),("liquidOn",Bool False),("languageServerVariant",String "haskell-language-server"),("serverExecutablePath",String "~/.ghcup/bin/haskell-language-server-wrapper"),("diagnosticsOnChange",Bool True),("completionSnippetsOn",Bool True),("maxNumberOfProblems",Number 100.0),("formattingProvider",String "ormolu"),("trace",Object (fromList [("server",String "off")]))]))]))
+2020-12-13 21:27:00.85811 [ThreadId 484] - hlint:getIdeas:file:NormalizedFilePath "$TMP/Main.hs"
+2020-12-13 21:27:01.063262 [ThreadId 21] - Modified text document: file://$TMP/Main.hs
+2020-12-13 21:27:01.06351 [ThreadId 539] - getClientConfigAction:clientSettings:Just (Object (fromList [("haskell",Object (fromList [("logFile",String ""),("updateBehavior",String "keep-up-to-date"),("hlintOn",Bool True),("formatOnImportOn",Bool True),("indentationRules",Object (fromList [("enabled",Bool True)])),("liquidOn",Bool False),("languageServerVariant",String "haskell-language-server"),("serverExecutablePath",String "~/.ghcup/bin/haskell-language-server-wrapper"),("diagnosticsOnChange",Bool True),("completionSnippetsOn",Bool True),("maxNumberOfProblems",Number 100.0),("formattingProvider",String "ormolu"),("trace",Object (fromList [("server",String "off")]))]))]))
+2020-12-13 21:27:01.063727 [ThreadId 539] - hlint:getIdeas:file:NormalizedFilePath "$TMP/Main.hs"
+2020-12-13 21:27:01.250817 [ThreadId 21] - Modified text document: file://$TMP/Main.hs
+2020-12-13 21:27:01.257244 [ThreadId 594] - getClientConfigAction:clientSettings:Just (Object (fromList [("haskell",Object (fromList [("logFile",String ""),("updateBehavior",String "keep-up-to-date"),("hlintOn",Bool True),("formatOnImportOn",Bool True),("indentationRules",Object (fromList [("enabled",Bool True)])),("liquidOn",Bool False),("languageServerVariant",String "haskell-language-server"),("serverExecutablePath",String "~/.ghcup/bin/haskell-language-server-wrapper"),("diagnosticsOnChange",Bool True),("completionSnippetsOn",Bool True),("maxNumberOfProblems",Number 100.0),("formattingProvider",String "ormolu"),("trace",Object (fromList [("server",String "off")]))]))]))
+2020-12-13 21:27:01.257485 [ThreadId 594] - hlint:getIdeas:file:NormalizedFilePath "$TMP/Main.hs"
+2020-12-13 21:27:01.500874 [ThreadId 616] - finish: CodeAction (took 0.00s)
+2020-12-13 21:27:01.501233 [ThreadId 621] - finish: CodeAction:PackageExports (took 0.00s)
+2020-12-13 21:27:01.502302 [ThreadId 622] - finish: importLens (took 0.00s)
+2020-12-13 21:27:01.503038 [ThreadId 624] - finish: retrie (took 0.00s)
+2020-12-13 21:27:01.506951 [ThreadId 626] - finish: tactic (took 0.00s)
+2020-12-13 21:27:01.507936 [ThreadId 632] - finish: tactic (took 0.00s)
+2020-12-13 21:27:01.508808 [ThreadId 633] - finish: tactic (took 0.00s)
+2020-12-13 21:27:01.514764 [ThreadId 21] - Modified text document: file://$TMP/Main.hs
+2020-12-13 21:27:01.521505 [ThreadId 680] - getClientConfigAction:clientSettings:Just (Object (fromList [("haskell",Object (fromList [("logFile",String ""),("updateBehavior",String "keep-up-to-date"),("hlintOn",Bool True),("formatOnImportOn",Bool True),("indentationRules",Object (fromList [("enabled",Bool True)])),("liquidOn",Bool False),("languageServerVariant",String "haskell-language-server"),("serverExecutablePath",String "~/.ghcup/bin/haskell-language-server-wrapper"),("diagnosticsOnChange",Bool True),("completionSnippetsOn",Bool True),("maxNumberOfProblems",Number 100.0),("formattingProvider",String "ormolu"),("trace",Object (fromList [("server",String "off")]))]))]))
+2020-12-13 21:27:01.521728 [ThreadId 680] - hlint:getIdeas:file:NormalizedFilePath "$TMP/Main.hs"
+2020-12-13 21:27:04.015942 [ThreadId 698] - Plugin.makeCodeLens (ideLogger)
+2020-12-13 21:27:04.018766 [ThreadId 699] - finish: codeLens (took 0.00s)
+2020-12-13 21:27:04.021146 [ThreadId 705] - finish:  (took 0.00s)
+2020-12-13 21:27:04.022296 [ThreadId 706] - finish: ModuleName.ghcSession (took 0.00s)
+2020-12-13 21:27:04.024276 [ThreadId 708] - finish: ModuleName.GetParsedModule (took 0.00s)
+2020-12-13 21:27:10.797983 [ThreadId 715] - finish: runEvalCmd.ghcSession (took 0.00s)
+2020-12-13 21:27:10.798745 [ThreadId 717] - finish: runEvalCmd.getModSummary (took 0.00s)
+2020-12-13 21:27:11.785152 [ThreadId 21] - Modified text document: file://$TMP/Main.hs
+2020-12-13 21:27:11.79103 [ThreadId 774] - getClientConfigAction:clientSettings:Just (Object (fromList [("haskell",Object (fromList [("logFile",String ""),("updateBehavior",String "keep-up-to-date"),("hlintOn",Bool True),("formatOnImportOn",Bool True),("indentationRules",Object (fromList [("enabled",Bool True)])),("liquidOn",Bool False),("languageServerVariant",String "haskell-language-server"),("serverExecutablePath",String "~/.ghcup/bin/haskell-language-server-wrapper"),("diagnosticsOnChange",Bool True),("completionSnippetsOn",Bool True),("maxNumberOfProblems",Number 100.0),("formattingProvider",String "ormolu"),("trace",Object (fromList [("server",String "off")]))]))]))
+2020-12-13 21:27:11.791325 [ThreadId 774] - hlint:getIdeas:file:NormalizedFilePath "$TMP/Main.hs"
+2020-12-13 21:27:12.039183 [ThreadId 796] - finish: CodeAction (took 0.00s)
+2020-12-13 21:27:12.04244 [ThreadId 801] - finish: CodeAction:PackageExports (took 0.00s)
+2020-12-13 21:27:12.043273 [ThreadId 802] - finish: importLens (took 0.00s)
+2020-12-13 21:27:12.043901 [ThreadId 804] - finish: retrie (took 0.00s)
+2020-12-13 21:27:12.044498 [ThreadId 806] - finish: tactic (took 0.00s)
+2020-12-13 21:27:12.045452 [ThreadId 812] - finish: tactic (took 0.00s)
+2020-12-13 21:27:12.046114 [ThreadId 813] - finish: tactic (took 0.00s)
+2020-12-13 21:27:14.282536 [ThreadId 818] - Plugin.makeCodeLens (ideLogger)
+2020-12-13 21:27:14.283323 [ThreadId 819] - finish: codeLens (took 0.00s)
+2020-12-13 21:27:14.287565 [ThreadId 825] - finish:  (took 0.00s)
+2020-12-13 21:27:14.289957 [ThreadId 826] - finish: ModuleName.ghcSession (took 0.00s)
+2020-12-13 21:27:14.292058 [ThreadId 828] - finish: ModuleName.GetParsedModule (took 0.00s)
+2020-12-13 21:27:38.906519 [ThreadId 840] - finish: Formatter (took 0.00s)
+2020-12-13 21:27:38.909044 [ThreadId 843] - finish: Ormolu (took 0.00s)
+2020-12-13 21:27:39.143461 [ThreadId 21] - Saved text document: file://$TMP/Main.hs
+2020-12-13 21:27:39.157767 [ThreadId 890] - Typechecking reverse dependencies forNormalizedFilePath "$TMP/Main.hs": []
+2020-12-13 21:27:40.436498 [ThreadId 21] - Closed text document: file://$TMP/Main.hs
+2020-12-13 21:27:40.437403 [ThreadId 898] - Typechecking reverse dependencies forNormalizedFilePath "$TMP/Main.hs": []

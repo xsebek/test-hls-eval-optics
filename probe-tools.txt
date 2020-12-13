@@ -1,0 +1,6 @@
+haskell-language-server version: 0.6.0.0 (GHC: 8.10.1) (PATH: /Users/xsebek/.ghcup/bin/haskell-language-server-wrapper-0.6.0) (GIT hash: 372a12e797069dc3ac4fa33dcaabe3b992999d7c)
+Tool versions found on the $PATH
+cabal:		3.2.0.0
+stack:		Not found
+ghc:		8.10.2
+
