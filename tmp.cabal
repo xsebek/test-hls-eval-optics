@@ -1,0 +1,12 @@
+cabal-version:       2.4
+
+name:                tmp
+version:             0.1.0.0
+description:         Testing eval plugin of Haskell language server (#663)
+author:              Ondřej Šebek
+maintainer:          xsebek@fi.muni.cz
+
+executable tmp
+  main-is:             Main.hs
+  build-depends:       base ^>=4.14.1.0, optics-core ^>=0.3.0.1
+  default-language:    Haskell2010
