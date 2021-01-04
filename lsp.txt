@@ -1,59 +1,177 @@
-[client] run command: "/Users/xsebek/.ghcup/bin/haskell-language-server-wrapper --lsp"
-[client] debug command: "/Users/xsebek/.ghcup/bin/haskell-language-server-wrapper --lsp"
+[client] run command: "/Users/xsebek/.ghcup/bin/haskell-language-server-wrapper --lsp -d"
+[client] debug command: "/Users/xsebek/.ghcup/bin/haskell-language-server-wrapper --lsp -d"
 [client] server cwd: undefined
 Found "$TMP/hie.yaml" for "$TMP/a"
 Module "$TMP/a" is loaded by Cradle: Cradle {cradleRootDir = "$TMP", cradleOptsProg = CradleAction: Cabal}
-Run entered for haskell-language-server-wrapper(haskell-language-server-wrapper) Version 0.6.0.0, Git revision 372a12e797069dc3ac4fa33dcaabe3b992999d7c (dirty) x86_64 ghc-8.10.1
+Run entered for haskell-language-server-wrapper(haskell-language-server-wrapper) Version 0.8.0.0, Git revision eb58f13f7b8e4f9bc771af30ff9fd82dc4309ff5 (dirty) x86_64 ghc-8.10.1
 Current directory: $TMP
 Operating system: darwin
-Arguments: ["--lsp"]
+Arguments: ["--lsp","-d"]
 Cradle directory: $TMP
 Cradle type: Cabal
 
 Tool versions found on the $PATH
 cabal:		3.2.0.0
 stack:		Not found
-ghc:		8.10.2
+ghc:		8.10.3
 
 
 Consulting the cradle to get project GHC version...
-Project GHC version: 8.10.2
-haskell-language-server exe candidates: ["haskell-language-server-8.10.2","haskell-language-server-8.10","haskell-language-server"]
-Launching haskell-language-server exe at:/Users/xsebek/.ghcup/bin/haskell-language-server-8.10.2
-haskell-language-server version: 0.6.0.0 (GHC: 8.10.2) (PATH: /Users/xsebek/.ghcup/bin/haskell-language-server-8.10.2~0.6.0) (GIT hash: 372a12e797069dc3ac4fa33dcaabe3b992999d7c)
+Project GHC version: 8.10.3
+haskell-language-server exe candidates: ["haskell-language-server-8.10.3","haskell-language-server-8.10","haskell-language-server"]
+Launching haskell-language-server exe at:/Users/xsebek/.ghcup/bin/haskell-language-server-8.10.3
+haskell-language-server version: 0.8.0.0 (GHC: 8.10.3) (PATH: /Users/xsebek/.ghcup/bin/haskell-language-server-8.10.3~0.8.0) (GIT hash: eb58f13f7b8e4f9bc771af30ff9fd82dc4309ff5)
 Starting (haskell-language-server)LSP server...
-  with arguments: LspArguments {argLSP = True, argsCwd = Nothing, argFiles = [], argsShakeProfiling = Nothing, argsTesting = False, argsExamplePlugin = False, argsDebugOn = False, argsLogFile = Nothing, argsThreads = 0, argsProjectGhcVersion = False}
-  with plugins: [PluginId "brittany",PluginId "eval",PluginId "floskell",PluginId "fourmolu",PluginId "ghcide",PluginId "hlint",PluginId "importLens",PluginId "moduleName",PluginId "ormolu",PluginId "pragmas",PluginId "retrie",PluginId "stylish-haskell",PluginId "tactic"]
+  with arguments: LspArguments {argLSP = True, argsCwd = Nothing, argFiles = [], argsShakeProfiling = Nothing, argsTesting = False, argsExamplePlugin = False, argsDebugOn = True, argsLogFile = Nothing, argsThreads = 0, argsProjectGhcVersion = False}
+  with plugins: [PluginId "brittany",PluginId "class",PluginId "eval",PluginId "floskell",PluginId "fourmolu",PluginId "ghcide",PluginId "hlint",PluginId "importLens",PluginId "moduleName",PluginId "ormolu",PluginId "pragmas",PluginId "retrie",PluginId "stylish-haskell",PluginId "tactic"]
   in directory: $TMP
 If you are seeing this in a terminal, you probably should have run ghcide WITHOUT the --lsp option!
- Started LSP server in 0.06s
-2020-12-13 21:23:46.185661 [ThreadId 17] - Registering ide configuration: IdeConfiguration {workspaceFolders = fromList [NormalizedUri (-4736958181149980466) "file://$TMP"], clientSettings = hashed Nothing}
-2020-12-13 21:23:46.200075 [ThreadId 17] - Configuration changed: Object (fromList [("haskell",Object (fromList [("logFile",String ""),("updateBehavior",String "keep-up-to-date"),("hlintOn",Bool True),("formatOnImportOn",Bool True),("indentationRules",Object (fromList [("enabled",Bool True)])),("liquidOn",Bool False),("languageServerVariant",String "haskell-language-server"),("serverExecutablePath",String "~/.ghcup/bin/haskell-language-server-wrapper"),("diagnosticsOnChange",Bool True),("completionSnippetsOn",Bool True),("maxNumberOfProblems",Number 100.0),("formattingProvider",String "ormolu"),("trace",Object (fromList [("server",String "off")]))]))])
-2020-12-13 21:23:46.203962 [ThreadId 17] - Opened text document: file://$TMP/Main.hs
-2020-12-13 21:23:46.207873 [ThreadId 60] - getClientConfigAction:clientSettings:Just (Object (fromList [("haskell",Object (fromList [("logFile",String ""),("updateBehavior",String "keep-up-to-date"),("hlintOn",Bool True),("formatOnImportOn",Bool True),("indentationRules",Object (fromList [("enabled",Bool True)])),("liquidOn",Bool False),("languageServerVariant",String "haskell-language-server"),("serverExecutablePath",String "~/.ghcup/bin/haskell-language-server-wrapper"),("diagnosticsOnChange",Bool True),("completionSnippetsOn",Bool True),("maxNumberOfProblems",Number 100.0),("formattingProvider",String "ormolu"),("trace",Object (fromList [("server",String "off")]))]))]))
-2020-12-13 21:23:46.208106 [ThreadId 60] - hlint:getIdeas:file:NormalizedFilePath "$TMP/Main.hs"
-2020-12-13 21:23:46.215173 [ThreadId 63] - Consulting the cradle for "Main.hs"
+ 2021-01-04 14:38:03.488641 [ThreadId 5] - 
+
+
+
+
+haskell-lsp:Starting up server ...
+2021-01-04 14:38:03.494108 [ThreadId 5] - ---> {"jsonrpc":"2.0","id":0,"method":"initialize","params":{"processId":8518,"clientInfo":{"name":"vscode","version":"1.52.1"},"rootPath":"$TMP","rootUri":"file://$TMP","capabilities":{"workspace":{"applyEdit":true,"workspaceEdit":{"documentChanges":true,"resourceOperations":["create","rename","delete"],"failureHandling":"textOnlyTransactional"},"didChangeConfiguration":{"dynamicRegistration":true},"didChangeWatchedFiles":{"dynamicRegistration":true},"symbol":{"dynamicRegistration":true,"symbolKind":{"valueSet":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26]}},"executeCommand":{"dynamicRegistration":true},"configuration":true,"workspaceFolders":true},"textDocument":{"publishDiagnostics":{"relatedInformation":true,"versionSupport":false,"tagSupport":{"valueSet":[1,2]}},"synchronization":{"dynamicRegistration":true,"willSave":true,"willSaveWaitUntil":true,"didSave":true},"completion":{"dynamicRegistration":true,"contextSupport":true,"completionItem":{"snippetSupport":true,"commitCharactersSupport":true,"documentationFormat":["markdown","plaintext"],"deprecatedSupport":true,"preselectSupport":true,"tagSupport":{"valueSet":[1]}},"completionItemKind":{"valueSet":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25]}},"hover":{"dynamicRegistration":true,"contentFormat":["markdown","plaintext"]},"signatureHelp":{"dynamicRegistration":true,"signatureInformation":{"documentationFormat":["markdown","plaintext"],"parameterInformation":{"labelOffsetSupport":true}},"contextSupport":true},"definition":{"dynamicRegistration":true,"linkSupport":true},"references":{"dynamicRegistration":true},"documentHighlight":{"dynamicRegistration":true},"documentSymbol":{"dynamicRegistration":true,"symbolKind":{"valueSet":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26]},"hierarchicalDocumentSymbolSupport":true},"codeAction":{"dynamicRegistration":true,"isPreferredSupport":true,"codeActionLiteralSupport":{"codeActionKind":{"valueSet":["","quickfix","refactor","refactor.extract","refactor.inline","refactor.rewrite","source","source.organizeImports"]}}},"codeLens":{"dynamicRegistration":true},"formatting":{"dynamicRegistration":true},"rangeFormatting":{"dynamicRegistration":true},"onTypeFormatting":{"dynamicRegistration":true},"rename":{"dynamicRegistration":true,"prepareSupport":true},"documentLink":{"dynamicRegistration":true,"tooltipSupport":true},"typeDefinition":{"dynamicRegistration":true,"linkSupport":true},"implementation":{"dynamicRegistration":true,"linkSupport":true},"colorProvider":{"dynamicRegistration":true},"foldingRange":{"dynamicRegistration":true,"rangeLimit":5000,"lineFoldingOnly":true},"declaration":{"dynamicRegistration":true,"linkSupport":true},"selectionRange":{"dynamicRegistration":true},"callHierarchy":{"dynamicRegistration":true},"semanticTokens":{"dynamicRegistration":true,"tokenTypes":["comment","keyword","number","regexp","operator","namespace","type","struct","class","interface","enum","typeParameter","function","member","macro","variable","parameter","property","label"],"tokenModifiers":["declaration","documentation","static","abstract","deprecated","async","readonly"]}},"window":{"workDoneProgress":true}},"trace":"off","workspaceFolders":[{"uri":"file://$TMP","name":"tmp"}]}}
+2021-01-04 14:38:03.527979 [ThreadId 5] - haskell-lsp:initializeRequestHandler: setting current dir to project root:$TMP
+Started LSP server in 0.05s
+2021-01-04 14:38:03.741282 [ThreadId 17] - Registering ide configuration: IdeConfiguration {workspaceFolders = fromList [NormalizedUri (-4736958181149980466) "file://$TMP"], clientSettings = hashed Nothing}
+2021-01-04 14:38:03.741843 [ThreadId 7] - <--2--{"result":{"capabilities":{"typeDefinitionProvider":true,"foldingRangeProvider":false,"textDocumentSync":{"openClose":true,"change":2,"save":{}},"workspace":{"workspaceFolders":{"supported":true,"changeNotifications":true}},"implementationProvider":true,"documentRangeFormattingProvider":true,"documentHighlightProvider":true,"executeCommandProvider":{"commands":["8537:class:addMinimalMethodPlaceholders","8537:eval:evalCommand","8537:ghcide:typesignature.add","8537:hlint:applyOne","8537:hlint:applyAll","8537:importLens:ImportLensCommand","8537:moduleName:edit","8537:retrie:retrieCommand","8537:tactic:tacticsAutoCommand","8537:tactic:tacticsIntrosCommand","8537:tactic:tacticsDestructCommand","8537:tactic:tacticsHomomorphismCommand","8537:tactic:tacticsDestructLambdaCaseCommand","8537:tactic:tacticsHomomorphismLambdaCaseCommand"]},"renameProvider":false,"colorProvider":false,"definitionProvider":true,"hoverProvider":true,"codeActionProvider":true,"completionProvider":{"triggerCharacters":["."],"resolveProvider":false},"codeLensProvider":{},"documentSymbolProvider":true,"documentFormattingProvider":true}},"jsonrpc":"2.0","id":0}
+2021-01-04 14:38:03.799179 [ThreadId 5] - ---> {"jsonrpc":"2.0","method":"initialized","params":{}}
+2021-01-04 14:38:03.799341 [ThreadId 5] - ---> {"jsonrpc":"2.0","method":"workspace/didChangeConfiguration","params":{"settings":{"haskell":{"hlintOn":true,"maxNumberOfProblems":100,"diagnosticsOnChange":true,"liquidOn":false,"completionSnippetsOn":true,"formatOnImportOn":true,"formattingProvider":"fourmolu","trace":{"server":"messages"},"logFile":"","languageServerVariant":"haskell-language-server","serverExecutablePath":"~/.ghcup/bin/haskell-language-server-wrapper","updateBehavior":"never-check","indentationRules":{"enabled":true}}}}}
+2021-01-04 14:38:03.799609 [ThreadId 5] - ---> {"jsonrpc":"2.0","method":"textDocument/didOpen","params":{"textDocument":{"uri":"file://$TMP/Main.hs","languageId":"haskell","version":1,"text":"module Main where\n\nimport Data.Tuple.Optics (Field1 (_1))\nimport Optics.Operators ((%~))\n\n-- >>> (\\(a,b,c) -> (succ a,b,c)) (0,2,3)\n\n-- >>> (_1 %~ succ) (1, 2, 3)\n\n-- >>> someFunc\nsomeFunc :: (Int, Int, Int)\nsomeFunc = (_1 %~ succ) (1, 2, 3)\n\n-- >>> main\nmain :: IO ()\nmain = do\n  putStrLn \"Hello, Haskell!\"\n  print someFunc\n"}}}
+2021-01-04 14:38:03.800819 [ThreadId 17] - Configuration changed: Object (fromList [("haskell",Object (fromList [("logFile",String ""),("updateBehavior",String "never-check"),("hlintOn",Bool True),("formatOnImportOn",Bool True),("indentationRules",Object (fromList [("enabled",Bool True)])),("liquidOn",Bool False),("languageServerVariant",String "haskell-language-server"),("serverExecutablePath",String "~/.ghcup/bin/haskell-language-server-wrapper"),("diagnosticsOnChange",Bool True),("completionSnippetsOn",Bool True),("maxNumberOfProblems",Number 100.0),("formattingProvider",String "fourmolu"),("trace",Object (fromList [("server",String "messages")]))]))])
+2021-01-04 14:38:03.809555 [ThreadId 7] - <--2--{"jsonrpc":"2.0","params":{"registrations":[{"registerOptions":{"watchers":[{"kind":5,"globPattern":"**/*.hs"},{"kind":5,"globPattern":"**/*.hs-boot"},{"kind":5,"globPattern":"**/*.lhs"},{"kind":5,"globPattern":"**/*.lhs-boot"}]},"method":"workspace/didChangeWatchedFiles","id":"globalFileWatches"}]},"method":"client/registerCapability","id":0}
+2021-01-04 14:38:03.812821 [ThreadId 17] - Restarting build session (aborting the previous one took 0.01s)
+2021-01-04 14:38:03.813754 [ThreadId 16] - Finishing build session(exception: AsyncCancelled)
+2021-01-04 14:38:03.815611 [ThreadId 17] - Set files of interest to: [(NormalizedFilePath "$TMP/Main.hs",Modified)]
+2021-01-04 14:38:03.828049 [ThreadId 36] - Finishing build session(exception: AsyncCancelled)
+2021-01-04 14:38:03.829102 [ThreadId 17] - Restarting build session (aborting the previous one took 0.01s)
+2021-01-04 14:38:03.830808 [ThreadId 17] - Opened text document: file://$TMP/Main.hs
+2021-01-04 14:38:03.84809 [ThreadId 61] - hlint:getIdeas:file:NormalizedFilePath "$TMP/Main.hs"
+2021-01-04 14:38:03.859441 [ThreadId 65] - Consulting the cradle for "Main.hs"
 Output from setting up the cradle Cradle {cradleRootDir = "$TMP", cradleOptsProg = CradleAction: Cabal}
-2020-12-13 21:23:49.433662 [ThreadId 81] - Plugin.makeCodeLens (ideLogger)
+2021-01-04 14:38:03.866363 [ThreadId 7] - <--2--{"jsonrpc":"2.0","params":{"token":0},"method":"window/workDoneProgress/create","id":1}
+2021-01-04 14:38:03.867069 [ThreadId 7] - <--2--{"jsonrpc":"2.0","params":{"value":{"kind":"begin","cancellable":false,"title":"Setting up tmp (for Main.hs)"},"token":0},"method":"$/progress"}
+2021-01-04 14:38:03.899012 [ThreadId 5] - ---> {"jsonrpc":"2.0","id":0,"result":null}
+2021-01-04 14:38:03.899184 [ThreadId 5] - haskell-lsp:Got reply message:"{\"jsonrpc\":\"2.0\",\"id\":0,\"result\":null}"
+2021-01-04 14:38:03.899317 [ThreadId 5] - ---> {"jsonrpc":"2.0","id":1,"method":"textDocument/documentSymbol","params":{"textDocument":{"uri":"file://$TMP/Main.hs"}}}
+2021-01-04 14:38:03.899498 [ThreadId 5] - ---> {"jsonrpc":"2.0","id":2,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file://$TMP/Main.hs"},"range":{"start":{"line":5,"character":6},"end":{"line":5,"character":6}},"context":{"diagnostics":[]}}}
+2021-01-04 14:38:03.951807 [ThreadId 7] - <--2--{"jsonrpc":"2.0","params":{"token":"27"},"method":"window/workDoneProgress/create","id":2}
+2021-01-04 14:38:03.951941 [ThreadId 7] - <--2--{"jsonrpc":"2.0","params":{"value":{"kind":"begin","title":"Processing"},"token":"27"},"method":"$/progress"}
+2021-01-04 14:38:04.050002 [ThreadId 5] - ---> {"jsonrpc":"2.0","id":1,"result":null}
+2021-01-04 14:38:04.050224 [ThreadId 5] - haskell-lsp:Got reply message:"{\"jsonrpc\":\"2.0\",\"id\":1,\"result\":null}"
+2021-01-04 14:38:04.052674 [ThreadId 7] - <--2--{"jsonrpc":"2.0","params":{"value":{"kind":"report","message":"0/2"},"token":"27"},"method":"$/progress"}
+2021-01-04 14:38:04.124026 [ThreadId 5] - ---> {"jsonrpc":"2.0","id":2,"result":null}
+2021-01-04 14:38:04.124194 [ThreadId 5] - haskell-lsp:Got reply message:"{\"jsonrpc\":\"2.0\",\"id\":2,\"result\":null}"
+2021-01-04 14:38:04.28949 [ThreadId 5] - ---> {"jsonrpc":"2.0","id":3,"method":"textDocument/codeLens","params":{"textDocument":{"uri":"file://$TMP/Main.hs"}}}
+2021-01-04 14:38:04.290075 [ThreadId 83] - Plugin.makeCodeLens (ideLogger)
+2021-01-04 14:38:04.290291 [ThreadId 83] - src/Ide/Plugin/Eval/CodeLens.hs:239:15 "fp" "$TMP/Main.hs"
+2021-01-04 14:38:04.558311 [ThreadId 7] - <--2--{"jsonrpc":"2.0","params":{"value":{"kind":"report","message":"1/2"},"token":"27"},"method":"$/progress"}
+2021-01-04 14:38:04.851469 [ThreadId 5] - ---> {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":1}}
+2021-01-04 14:38:04.852042 [ThreadId 75] - C:GetParsedModule was cancelled
+2021-01-04 14:38:04.852177 [ThreadId 73] - Cancelled request IdInt 1
+2021-01-04 14:38:04.852442 [ThreadId 7] - <--2--{"error":{"code":-32800,"message":""},"jsonrpc":"2.0","id":1}
+2021-01-04 14:38:04.853483 [ThreadId 5] - ---> {"jsonrpc":"2.0","id":4,"method":"textDocument/documentSymbol","params":{"textDocument":{"uri":"file://$TMP/Main.hs"}}}
 > Resolving dependencies...
-> Build profile: -w ghc-8.10.2 -O1
+> Build profile: -w ghc-8.10.3 -O1
 > In order, the following will be built (use -v for more details):
 >  - tmp-0.1.0.0 (exe:tmp) (configuration changed)
 > Configuring executable 'tmp' for tmp-0.1.0.0..
 > Preprocessing executable 'tmp' for tmp-0.1.0.0..
-2020-12-13 21:24:02.018934 [ThreadId 63] - Using interface files cache dir: /Users/xsebek/.cache/ghcide/main-ff69a3833a9952d7422f2284419b2692c79fac66
-2020-12-13 21:24:02.020105 [ThreadId 63] - Making new HscEnv[main]
-2020-12-13 21:24:02.059869 [ThreadId 100] - getClientConfigAction:clientSettings:Just (Object (fromList [("haskell",Object (fromList [("logFile",String ""),("updateBehavior",String "keep-up-to-date"),("hlintOn",Bool True),("formatOnImportOn",Bool True),("indentationRules",Object (fromList [("enabled",Bool True)])),("liquidOn",Bool False),("languageServerVariant",String "haskell-language-server"),("serverExecutablePath",String "~/.ghcup/bin/haskell-language-server-wrapper"),("diagnosticsOnChange",Bool True),("completionSnippetsOn",Bool True),("maxNumberOfProblems",Number 100.0),("formattingProvider",String "ormolu"),("trace",Object (fromList [("server",String "off")]))]))]))
-2020-12-13 21:24:02.060282 [ThreadId 100] - hlint:getIdeas:file:NormalizedFilePath "$TMP/Main.hs"
-2020-12-13 21:24:02.305932 [ThreadId 160] - finish: codeLens (took 0.25s)
-2020-12-13 21:24:02.310104 [ThreadId 156] - finish:  (took 0.00s)
-2020-12-13 21:24:02.317185 [ThreadId 161] - finish: ModuleName.ghcSession (took 0.00s)
-2020-12-13 21:24:02.319785 [ThreadId 168] - finish: ModuleName.GetParsedModule (took 0.00s)
-2020-12-13 21:24:28.320436 [ThreadId 176] - finish: runEvalCmd.ghcSession (took 0.00s)
-2020-12-13 21:24:28.321188 [ThreadId 178] - finish: runEvalCmd.getModSummary (took 0.00s)
-haskell-language-server-wrapper: callProcess: /Users/xsebek/.ghcup/bin/haskell-language-server-8.10.2 "--lsp" (exit -11): failed
-[Info  - 9:24:29 PM] Connection to server got closed. Server will restart.
-[Error - 9:24:29 PM] Request workspace/executeCommand failed.
+2021-01-04 14:38:15.563766 [ThreadId 7] - <--2--{"jsonrpc":"2.0","params":{"value":{"kind":"end"},"token":0},"method":"$/progress"}
+2021-01-04 14:38:15.563638 [ThreadId 65] - Session loading result: Right (ComponentOptions {componentOptions = ["-fbuilding-cabal-package","-O0","-outputdir","$TMP/dist-newstyle/build/x86_64-osx/ghc-8.10.3/tmp-0.1.0.0/x/tmp/build/tmp/tmp-tmp","-odir","$TMP/dist-newstyle/build/x86_64-osx/ghc-8.10.3/tmp-0.1.0.0/x/tmp/build/tmp/tmp-tmp","-hidir","$TMP/dist-newstyle/build/x86_64-osx/ghc-8.10.3/tmp-0.1.0.0/x/tmp/build/tmp/tmp-tmp","-stubdir","$TMP/dist-newstyle/build/x86_64-osx/ghc-8.10.3/tmp-0.1.0.0/x/tmp/build/tmp/tmp-tmp","-i","-i$TMP/dist-newstyle/build/x86_64-osx/ghc-8.10.3/tmp-0.1.0.0/x/tmp/build/tmp/tmp-tmp","-i.","-i$TMP/dist-newstyle/build/x86_64-osx/ghc-8.10.3/tmp-0.1.0.0/x/tmp/build/tmp/autogen","-i$TMP/dist-newstyle/build/x86_64-osx/ghc-8.10.3/tmp-0.1.0.0/x/tmp/build/global-autogen","-I$TMP/dist-newstyle/build/x86_64-osx/ghc-8.10.3/tmp-0.1.0.0/x/tmp/build/tmp/autogen","-I$TMP/dist-newstyle/build/x86_64-osx/ghc-8.10.3/tmp-0.1.0.0/x/tmp/build/global-autogen","-I$TMP/dist-newstyle/build/x86_64-osx/ghc-8.10.3/tmp-0.1.0.0/x/tmp/build/tmp/tmp-tmp","-optP-include","-optP$TMP/dist-newstyle/build/x86_64-osx/ghc-8.10.3/tmp-0.1.0.0/x/tmp/build/tmp/autogen/cabal_macros.h","-hide-all-packages","-Wmissing-home-modules","-no-user-package-db","-package-db","/Users/xsebek/.cabal/store/ghc-8.10.3/package.db","-package-db","$TMP/dist-newstyle/packagedb/ghc-8.10.3","-package-db","$TMP/dist-newstyle/build/x86_64-osx/ghc-8.10.3/tmp-0.1.0.0/x/tmp/package.conf.inplace","-package-id","base-4.14.1.0","-package-id","ptcs-cr-0.3.0.1-4d591369","-XHaskell2010","./Main.hs","-hide-all-packages","-haddock"], componentRoot = "$TMP", componentDependencies = ["tmp.cabal","cabal.project","cabal.project.local"]},"/Users/xsebek/.ghcup/ghc/8.10.3/lib/ghc-8.10.3")
+2021-01-04 14:38:15.673487 [ThreadId 65] - Using interface files cache dir: ghcide
+2021-01-04 14:38:15.673603 [ThreadId 65] - Making new HscEnv[main]
+2021-01-04 14:38:15.709289 [ThreadId 65] - New Component Cache HscEnvEq: (([],Just HscEnvEq 32),fromList [("$TMP/hie.yaml",Just 2020-12-13 20:15:18.98953434 UTC),("cabal.project",Nothing),("cabal.project.local",Nothing),("tmp.cabal",Just 2020-12-13 20:17:31.68642625 UTC)])
+2021-01-04 14:38:15.709723 [ThreadId 65] - Known files updated: fromList [(TargetFile NormalizedFilePath "$TMP/Main.hs",["$TMP/Main.hs"])]
+2021-01-04 14:38:15.710531 [ThreadId 43] - Finishing build session(exception: AsyncCancelled)
+2021-01-04 14:38:15.711993 [ThreadId 65] - Restarting build session (aborting the previous one took 0.00s)
+2021-01-04 14:38:15.71401 [ThreadId 7] - <--2--{"jsonrpc":"2.0","params":{"value":{"kind":"report","message":"0/2"},"token":"27"},"method":"$/progress"}
+2021-01-04 14:38:15.71469 [ThreadId 108] - hlint:getIdeas:file:NormalizedFilePath "$TMP/Main.hs"
+2021-01-04 14:38:15.717715 [ThreadId 132] - finish: getSession (took 0.00s)
+2021-01-04 14:38:15.717999 [ThreadId 83] - src/Ide/Plugin/Eval/CodeLens.hs:239:15 "preprocessor" "0.00s"
+2021-01-04 14:38:15.718145 [ThreadId 83] - src/Ide/Plugin/Eval/CodeLens.hs:239:15 "Tests" "4 tests in 4 sections 0 setups 4 lenses."
+2021-01-04 14:38:15.718355 [ThreadId 83] - src/Ide/Plugin/Eval/CodeLens.hs:239:15 "tests" "0.00s"
+2021-01-04 14:38:15.71845 [ThreadId 83] - src/Ide/Plugin/Eval/CodeLens.hs:239:15 "codeLens" "11.43s"
+2021-01-04 14:38:15.720279 [ThreadId 139] - finish: C:GetParsedModule (took 0.01s)
+2021-01-04 14:38:15.720232 [ThreadId 150] - finish: CodeAction (took 0.01s)
+2021-01-04 14:38:15.720884 [ThreadId 7] - <--2--{"result":[{"selectionRange":{"start":{"line":0,"character":7},"end":{"line":0,"character":11}},"kind":1,"children":[{"selectionRange":{"start":{"line":2,"character":0},"end":{"line":3,"character":30}},"kind":2,"children":[{"selectionRange":{"start":{"line":2,"character":0},"end":{"line":2,"character":38}},"kind":2,"name":"import Data.Tuple.Optics","range":{"start":{"line":2,"character":0},"end":{"line":2,"character":38}}},{"selectionRange":{"start":{"line":3,"character":0},"end":{"line":3,"character":30}},"kind":2,"name":"import Optics.Operators","range":{"start":{"line":3,"character":0},"end":{"line":3,"character":30}}}],"name":"imports","range":{"start":{"line":2,"character":0},"end":{"line":3,"character":30}}},{"selectionRange":{"start":{"line":11,"character":0},"end":{"line":11,"character":33}},"kind":12,"name":"someFunc","range":{"start":{"line":11,"character":0},"end":{"line":11,"character":33}}},{"selectionRange":{"start":{"line":15,"character":0},"end":{"line":17,"character":16}},"kind":12,"name":"main","range":{"start":{"line":15,"character":0},"end":{"line":17,"character":16}}}],"name":"Main","range":{"start":{"line":0,"character":0},"end":{"line":9223372036854775807,"character":0}}}],"jsonrpc":"2.0","id":4}
+2021-01-04 14:38:15.815355 [ThreadId 7] - <--2--{"jsonrpc":"2.0","params":{"value":{"kind":"report","message":"2/4"},"token":"27"},"method":"$/progress"}
+2021-01-04 14:38:15.839666 [ThreadId 148] - finish: codeLens (took 0.12s)
+2021-01-04 14:38:15.844548 [ThreadId 148] - finish:  (took 0.00s)
+2021-01-04 14:38:15.845357 [ThreadId 159] - finish: ModuleName.ghcSession (took 0.00s)
+2021-01-04 14:38:15.850525 [ThreadId 159] - finish: InitialLoad (took 0.14s)
+2021-01-04 14:38:15.850783 [ThreadId 159] - finish: ModuleName.GetParsedModule (took 0.00s)
+2021-01-04 14:38:15.853189 [ThreadId 7] - <--2--{"result":[{"command":{"command":"8537:eval:evalCommand","arguments":[{"module_":{"uri":"file://$TMP/Main.hs"},"sections":[{"sectionTests":[{"located":{"tag":"Example","testOutput":[],"testLines":[" (\\(a,b,c) -> (succ a,b,c)) (0,2,3)"]},"location":5}],"sectionLanguage":"Plain","sectionFormat":"SingleLine","sectionName":""}]}],"title":"Evaluate..."},"range":{"start":{"line":5,"character":0},"end":{"line":6,"character":0}}},{"command":{"command":"8537:eval:evalCommand","arguments":[{"module_":{"uri":"file://$TMP/Main.hs"},"sections":[{"sectionTests":[{"located":{"tag":"Example","testOutput":[],"testLines":[" (_1 %~ succ) (1, 2, 3)"]},"location":7}],"sectionLanguage":"Plain","sectionFormat":"SingleLine","sectionName":""}]}],"title":"Evaluate..."},"range":{"start":{"line":7,"character":0},"end":{"line":8,"character":0}}},{"command":{"command":"8537:eval:evalCommand","arguments":[{"module_":{"uri":"file://$TMP/Main.hs"},"sections":[{"sectionTests":[{"located":{"tag":"Example","testOutput":[],"testLines":[" someFunc"]},"location":9}],"sectionLanguage":"Plain","sectionFormat":"SingleLine","sectionName":""}]}],"title":"Evaluate..."},"range":{"start":{"line":9,"character":0},"end":{"line":10,"character":0}}},{"command":{"command":"8537:eval:evalCommand","arguments":[{"module_":{"uri":"file://$TMP/Main.hs"},"sections":[{"sectionTests":[{"located":{"tag":"Example","testOutput":[],"testLines":[" main"]},"location":13}],"sectionLanguage":"Plain","sectionFormat":"SingleLine","sectionName":""}]}],"title":"Evaluate..."},"range":{"start":{"line":13,"character":0},"end":{"line":14,"character":0}}}],"jsonrpc":"2.0","id":3}
+2021-01-04 14:38:15.853486 [ThreadId 7] - <--2--{"jsonrpc":"2.0","params":{"value":{"kind":"end"},"token":"27"},"method":"$/progress"}
+2021-01-04 14:38:16.215979 [ThreadId 169] - finish: CodeAction:PackageExports (took 0.49s)
+2021-01-04 14:38:16.216434 [ThreadId 170] - finish: importLens (took 0.00s)
+2021-01-04 14:38:16.21718 [ThreadId 172] - finish: addPragma (took 0.00s)
+2021-01-04 14:38:16.218531 [ThreadId 174] - finish: retrie (took 0.00s)
+2021-01-04 14:38:16.219839 [ThreadId 176] - finish: tactic (took 0.00s)
+2021-01-04 14:38:16.220556 [ThreadId 182] - finish: tactic (took 0.00s)
+2021-01-04 14:38:16.220682 [ThreadId 183] - finish: tactic (took 0.00s)
+2021-01-04 14:38:16.221234 [ThreadId 7] - <--2--{"result":[],"jsonrpc":"2.0","id":2}
+2021-01-04 14:39:18.733232 [ThreadId 5] - ---> {"jsonrpc":"2.0","id":5,"method":"workspace/executeCommand","params":{"command":"8537:eval:evalCommand","arguments":[{"module_":{"uri":"file://$TMP/Main.hs"},"sections":[{"sectionTests":[{"located":{"tag":"Example","testOutput":[],"testLines":[" (\\(a,b,c) -> (succ a,b,c)) (0,2,3)"]},"location":5}],"sectionLanguage":"Plain","sectionFormat":"SingleLine","sectionName":""}]}]}}
+2021-01-04 14:39:18.744211 [ThreadId 7] - <--2--{"jsonrpc":"2.0","params":{"token":1},"method":"window/workDoneProgress/create","id":3}
+2021-01-04 14:39:18.744517 [ThreadId 7] - <--2--{"jsonrpc":"2.0","params":{"value":{"kind":"begin","cancellable":true,"title":"Evaluating"},"token":1},"method":"$/progress"}
+2021-01-04 14:39:18.745049 [ThreadId 5] - ---> {"jsonrpc":"2.0","id":3,"result":null}
+2021-01-04 14:39:18.745225 [ThreadId 5] - haskell-lsp:Got reply message:"{\"jsonrpc\":\"2.0\",\"id\":3,\"result\":null}"
+2021-01-04 14:39:18.745494 [ThreadId 190] - finish: getSession (took 0.00s)
+2021-01-04 14:39:18.746432 [ThreadId 192] - finish: runEvalCmd.getModSummary (took 0.00s)
+2021-01-04 14:39:18.754464 [ThreadId 189] - src/Ide/Plugin/Eval/CodeLens.hs:322:15 "QUICKCHECK NEEDS" False
+2021-01-04 14:39:18.754598 [ThreadId 189] - src/Ide/Plugin/Eval/CodeLens.hs:322:15 "QUICKCHECK HAS" False
+2021-01-04 14:39:18.754748 [ThreadId 189] - src/Ide/Plugin/Eval/CodeLens.hs:322:15 "setTarget" Right ()
+2021-01-04 14:39:18.783014 [ThreadId 189] - src/Ide/Plugin/Eval/CodeLens.hs:322:15 "loadModule" "0.03s"
+2021-01-04 14:39:18.783182 [ThreadId 189] - src/Ide/Plugin/Eval/CodeLens.hs:322:15 "LOAD RESULT" "Succeeded"
+2021-01-04 14:39:19.535952 [ThreadId 189] - src/Ide/Plugin/Eval/CodeLens.hs:534:11 "{EXPR" " (\\(a,b,c) -> (succ a,b,c)) (0,2,3)"
+2021-01-04 14:39:19.560552 [ThreadId 189] - src/Ide/Plugin/Eval/CodeLens.hs:534:11 "RES ->" Right "(1,2,3)"
+2021-01-04 14:39:19.560765 [ThreadId 189] - src/Ide/Plugin/Eval/CodeLens.hs:534:11 "EXPR} ->" ["(1,2,3)"]
+2021-01-04 14:39:19.560871 [ThreadId 189] - src/Ide/Plugin/Eval/CodeLens.hs:451:19 "TEST RESULTS" ["(1,2,3)"]
+2021-01-04 14:39:19.560954 [ThreadId 189] - src/Ide/Plugin/Eval/CodeLens.hs:451:19 "TEST EDIT" TextEdit {_range = Range {_start = Position {_line = 6, _character = 0}, _end = Position {_line = 6, _character = 0}}, _newText = "-- (1,2,3)\n"}
+2021-01-04 14:39:19.561222 [ThreadId 189] - src/Ide/Plugin/Eval/CodeLens.hs:322:15 "edits" "0.78s"
+2021-01-04 14:39:19.562575 [ThreadId 188] - src/Ide/Plugin/Eval/CodeLens.hs:322:15 "evalCmd" "0.82s"
+2021-01-04 14:39:19.56282 [ThreadId 7] - <--2--{"jsonrpc":"2.0","params":{"value":{"kind":"end"},"token":1},"method":"$/progress"}
+2021-01-04 14:39:19.565526 [ThreadId 7] - <--2--{"result":null,"jsonrpc":"2.0","id":5}
+2021-01-04 14:39:19.56608 [ThreadId 7] - <--2--{"jsonrpc":"2.0","params":{"edit":{"changes":{"file://$TMP/Main.hs":[{"range":{"start":{"line":6,"character":0},"end":{"line":6,"character":0}},"newText":"-- (1,2,3)\n"}]}}},"method":"workspace/applyEdit","id":4}
+2021-01-04 14:39:19.638513 [ThreadId 5] - ---> {"jsonrpc":"2.0","method":"textDocument/didChange","params":{"textDocument":{"uri":"file://$TMP/Main.hs","version":2},"contentChanges":[{"range":{"start":{"line":6,"character":0},"end":{"line":6,"character":0}},"rangeLength":0,"text":"-- (1,2,3)\n"}]}}
+2021-01-04 14:39:19.638919 [ThreadId 5] - ---> {"jsonrpc":"2.0","id":4,"result":{"applied":true}}
+2021-01-04 14:39:19.639024 [ThreadId 5] - haskell-lsp:Got reply message:"{\"jsonrpc\":\"2.0\",\"id\":4,\"result\":{\"applied\":true}}"
+2021-01-04 14:39:19.64065 [ThreadId 17] - Set files of interest to: [(NormalizedFilePath "$TMP/Main.hs",Modified)]
+2021-01-04 14:39:19.641605 [ThreadId 102] - Finishing build session(exception: AsyncCancelled)
+2021-01-04 14:39:19.642437 [ThreadId 17] - Restarting build session (aborting the previous one took 0.00s)
+2021-01-04 14:39:19.644444 [ThreadId 17] - Modified text document: file://$TMP/Main.hs
+2021-01-04 14:39:19.653955 [ThreadId 249] - hlint:getIdeas:file:NormalizedFilePath "$TMP/Main.hs"
+2021-01-04 14:39:22.099453 [ThreadId 5] - ---> {"jsonrpc":"2.0","id":6,"method":"textDocument/codeLens","params":{"textDocument":{"uri":"file://$TMP/Main.hs"}}}
+2021-01-04 14:39:22.100305 [ThreadId 272] - Plugin.makeCodeLens (ideLogger)
+2021-01-04 14:39:22.100533 [ThreadId 272] - src/Ide/Plugin/Eval/CodeLens.hs:239:15 "fp" "$TMP/Main.hs"
+2021-01-04 14:39:22.10172 [ThreadId 273] - finish: getSession (took 0.00s)
+2021-01-04 14:39:22.103026 [ThreadId 272] - src/Ide/Plugin/Eval/CodeLens.hs:239:15 "preprocessor" "0.00s"
+2021-01-04 14:39:22.103192 [ThreadId 272] - src/Ide/Plugin/Eval/CodeLens.hs:239:15 "Tests" "4 tests in 4 sections 0 setups 4 lenses."
+2021-01-04 14:39:22.103436 [ThreadId 272] - src/Ide/Plugin/Eval/CodeLens.hs:239:15 "tests" "0.00s"
+2021-01-04 14:39:22.103601 [ThreadId 272] - src/Ide/Plugin/Eval/CodeLens.hs:239:15 "codeLens" "0.00s"
+2021-01-04 14:39:22.104481 [ThreadId 275] - finish: codeLens (took 0.00s)
+2021-01-04 14:39:22.105612 [ThreadId 281] - finish:  (took 0.00s)
+2021-01-04 14:39:22.107037 [ThreadId 282] - finish: ModuleName.ghcSession (took 0.00s)
+2021-01-04 14:39:22.108393 [ThreadId 284] - finish: ModuleName.GetParsedModule (took 0.00s)
+2021-01-04 14:39:22.109066 [ThreadId 7] - <--2--{"result":[{"command":{"command":"8537:eval:evalCommand","arguments":[{"module_":{"uri":"file://$TMP/Main.hs"},"sections":[{"sectionTests":[{"located":{"tag":"Example","testOutput":["(1,2,3)"],"testLines":[" (\\(a,b,c) -> (succ a,b,c)) (0,2,3)"]},"location":5}],"sectionLanguage":"Plain","sectionFormat":"SingleLine","sectionName":""}]}],"title":"Refresh..."},"range":{"start":{"line":5,"character":0},"end":{"line":6,"character":0}}},{"command":{"command":"8537:eval:evalCommand","arguments":[{"module_":{"uri":"file://$TMP/Main.hs"},"sections":[{"sectionTests":[{"located":{"tag":"Example","testOutput":[],"testLines":[" (_1 %~ succ) (1, 2, 3)"]},"location":8}],"sectionLanguage":"Plain","sectionFormat":"SingleLine","sectionName":""}]}],"title":"Evaluate..."},"range":{"start":{"line":8,"character":0},"end":{"line":9,"character":0}}},{"command":{"command":"8537:eval:evalCommand","arguments":[{"module_":{"uri":"file://$TMP/Main.hs"},"sections":[{"sectionTests":[{"located":{"tag":"Example","testOutput":[],"testLines":[" someFunc"]},"location":10}],"sectionLanguage":"Plain","sectionFormat":"SingleLine","sectionName":""}]}],"title":"Evaluate..."},"range":{"start":{"line":10,"character":0},"end":{"line":11,"character":0}}},{"command":{"command":"8537:eval:evalCommand","arguments":[{"module_":{"uri":"file://$TMP/Main.hs"},"sections":[{"sectionTests":[{"located":{"tag":"Example","testOutput":[],"testLines":[" main"]},"location":14}],"sectionLanguage":"Plain","sectionFormat":"SingleLine","sectionName":""}]}],"title":"Evaluate..."},"range":{"start":{"line":14,"character":0},"end":{"line":15,"character":0}}}],"jsonrpc":"2.0","id":6}
+2021-01-04 14:39:25.97236 [ThreadId 5] - ---> {"jsonrpc":"2.0","id":7,"method":"workspace/executeCommand","params":{"command":"8537:eval:evalCommand","arguments":[{"module_":{"uri":"file://$TMP/Main.hs"},"sections":[{"sectionTests":[{"located":{"tag":"Example","testOutput":[],"testLines":[" (_1 %~ succ) (1, 2, 3)"]},"location":8}],"sectionLanguage":"Plain","sectionFormat":"SingleLine","sectionName":""}]}]}}
+2021-01-04 14:39:25.974984 [ThreadId 7] - <--2--{"jsonrpc":"2.0","params":{"token":2},"method":"window/workDoneProgress/create","id":5}
+2021-01-04 14:39:25.975632 [ThreadId 7] - <--2--{"jsonrpc":"2.0","params":{"value":{"kind":"begin","cancellable":true,"title":"Evaluating"},"token":2},"method":"$/progress"}
+2021-01-04 14:39:25.976018 [ThreadId 291] - finish: getSession (took 0.00s)
+2021-01-04 14:39:25.976491 [ThreadId 5] - ---> {"jsonrpc":"2.0","id":5,"result":null}
+2021-01-04 14:39:25.976585 [ThreadId 5] - haskell-lsp:Got reply message:"{\"jsonrpc\":\"2.0\",\"id\":5,\"result\":null}"
+2021-01-04 14:39:25.977146 [ThreadId 293] - finish: runEvalCmd.getModSummary (took 0.00s)
+2021-01-04 14:39:25.983493 [ThreadId 290] - src/Ide/Plugin/Eval/CodeLens.hs:322:15 "QUICKCHECK NEEDS" False
+2021-01-04 14:39:25.983624 [ThreadId 290] - src/Ide/Plugin/Eval/CodeLens.hs:322:15 "QUICKCHECK HAS" False
+2021-01-04 14:39:25.983751 [ThreadId 290] - src/Ide/Plugin/Eval/CodeLens.hs:322:15 "setTarget" Right ()
+2021-01-04 14:39:25.998781 [ThreadId 290] - src/Ide/Plugin/Eval/CodeLens.hs:322:15 "loadModule" "0.01s"
+2021-01-04 14:39:25.998929 [ThreadId 290] - src/Ide/Plugin/Eval/CodeLens.hs:322:15 "LOAD RESULT" "Succeeded"
+2021-01-04 14:39:26.011971 [ThreadId 290] - src/Ide/Plugin/Eval/CodeLens.hs:534:11 "{EXPR" " (_1 %~ succ) (1, 2, 3)"
+haskell-language-server-wrapper: callProcess: /Users/xsebek/.ghcup/bin/haskell-language-server-8.10.3 "--lsp" "-d" (exit -11): failed
+[Info  - 2:39:26 PM] Connection to server got closed. Server will restart.
+[Error - 2:39:26 PM] Request workspace/executeCommand failed.
 Error: Connection got disposed.
 	at Object.dispose (/Users/xsebek/.vscode/extensions/haskell.haskell-1.2.0/dist/extension.js:1:90964)
 	at Object.dispose (/Users/xsebek/.vscode/extensions/haskell.haskell-1.2.0/dist/extension.js:1:74243)
@@ -71,197 +189,122 @@ Error: Connection got disposed.
 	at Pipe.<anonymous> (net.js:664:12)
 Found "$TMP/hie.yaml" for "$TMP/a"
 Module "$TMP/a" is loaded by Cradle: Cradle {cradleRootDir = "$TMP", cradleOptsProg = CradleAction: Cabal}
-Run entered for haskell-language-server-wrapper(haskell-language-server-wrapper) Version 0.6.0.0, Git revision 372a12e797069dc3ac4fa33dcaabe3b992999d7c (dirty) x86_64 ghc-8.10.1
+Run entered for haskell-language-server-wrapper(haskell-language-server-wrapper) Version 0.8.0.0, Git revision eb58f13f7b8e4f9bc771af30ff9fd82dc4309ff5 (dirty) x86_64 ghc-8.10.1
 Current directory: $TMP
 Operating system: darwin
-Arguments: ["--lsp"]
+Arguments: ["--lsp","-d"]
 Cradle directory: $TMP
 Cradle type: Cabal
 
 Tool versions found on the $PATH
 cabal:		3.2.0.0
 stack:		Not found
-ghc:		8.10.2
+ghc:		8.10.3
 
 
 Consulting the cradle to get project GHC version...
-Project GHC version: 8.10.2
-haskell-language-server exe candidates: ["haskell-language-server-8.10.2","haskell-language-server-8.10","haskell-language-server"]
-Launching haskell-language-server exe at:/Users/xsebek/.ghcup/bin/haskell-language-server-8.10.2
-haskell-language-server version: 0.6.0.0 (GHC: 8.10.2) (PATH: /Users/xsebek/.ghcup/bin/haskell-language-server-8.10.2~0.6.0) (GIT hash: 372a12e797069dc3ac4fa33dcaabe3b992999d7c)
+Project GHC version: 8.10.3
+haskell-language-server exe candidates: ["haskell-language-server-8.10.3","haskell-language-server-8.10","haskell-language-server"]
+Launching haskell-language-server exe at:/Users/xsebek/.ghcup/bin/haskell-language-server-8.10.3
+haskell-language-server version: 0.8.0.0 (GHC: 8.10.3) (PATH: /Users/xsebek/.ghcup/bin/haskell-language-server-8.10.3~0.8.0) (GIT hash: eb58f13f7b8e4f9bc771af30ff9fd82dc4309ff5)
 Starting (haskell-language-server)LSP server...
-  with arguments: LspArguments {argLSP = True, argsCwd = Nothing, argFiles = [], argsShakeProfiling = Nothing, argsTesting = False, argsExamplePlugin = False, argsDebugOn = False, argsLogFile = Nothing, argsThreads = 0, argsProjectGhcVersion = False}
-  with plugins: [PluginId "brittany",PluginId "eval",PluginId "floskell",PluginId "fourmolu",PluginId "ghcide",PluginId "hlint",PluginId "importLens",PluginId "moduleName",PluginId "ormolu",PluginId "pragmas",PluginId "retrie",PluginId "stylish-haskell",PluginId "tactic"]
+  with arguments: LspArguments {argLSP = True, argsCwd = Nothing, argFiles = [], argsShakeProfiling = Nothing, argsTesting = False, argsExamplePlugin = False, argsDebugOn = True, argsLogFile = Nothing, argsThreads = 0, argsProjectGhcVersion = False}
+  with plugins: [PluginId "brittany",PluginId "class",PluginId "eval",PluginId "floskell",PluginId "fourmolu",PluginId "ghcide",PluginId "hlint",PluginId "importLens",PluginId "moduleName",PluginId "ormolu",PluginId "pragmas",PluginId "retrie",PluginId "stylish-haskell",PluginId "tactic"]
   in directory: $TMP
 If you are seeing this in a terminal, you probably should have run ghcide WITHOUT the --lsp option!
- Started LSP server in 0.01s
-2020-12-13 21:24:30.656689 [ThreadId 18] - Registering ide configuration: IdeConfiguration {workspaceFolders = fromList [NormalizedUri (-4736958181149980466) "file://$TMP"], clientSettings = hashed Nothing}
-2020-12-13 21:24:30.664024 [ThreadId 18] - Configuration changed: Object (fromList [("haskell",Object (fromList [("logFile",String ""),("updateBehavior",String "keep-up-to-date"),("hlintOn",Bool True),("formatOnImportOn",Bool True),("indentationRules",Object (fromList [("enabled",Bool True)])),("liquidOn",Bool False),("languageServerVariant",String "haskell-language-server"),("serverExecutablePath",String "~/.ghcup/bin/haskell-language-server-wrapper"),("diagnosticsOnChange",Bool True),("completionSnippetsOn",Bool True),("maxNumberOfProblems",Number 100.0),("formattingProvider",String "ormolu"),("trace",Object (fromList [("server",String "off")]))]))])
-2020-12-13 21:24:30.666721 [ThreadId 18] - Opened text document: file://$TMP/Main.hs
-2020-12-13 21:24:30.690214 [ThreadId 52] - getClientConfigAction:clientSettings:Just (Object (fromList [("haskell",Object (fromList [("logFile",String ""),("updateBehavior",String "keep-up-to-date"),("hlintOn",Bool True),("formatOnImportOn",Bool True),("indentationRules",Object (fromList [("enabled",Bool True)])),("liquidOn",Bool False),("languageServerVariant",String "haskell-language-server"),("serverExecutablePath",String "~/.ghcup/bin/haskell-language-server-wrapper"),("diagnosticsOnChange",Bool True),("completionSnippetsOn",Bool True),("maxNumberOfProblems",Number 100.0),("formattingProvider",String "ormolu"),("trace",Object (fromList [("server",String "off")]))]))]))
-2020-12-13 21:24:30.690468 [ThreadId 52] - hlint:getIdeas:file:NormalizedFilePath "$TMP/Main.hs"
-2020-12-13 21:24:30.69102 [ThreadId 60] - Consulting the cradle for "Main.hs"
+ 2021-01-04 14:39:27.419204 [ThreadId 5] - 
+
+
+
+
+haskell-lsp:Starting up server ...
+2021-01-04 14:39:27.426613 [ThreadId 5] - ---> {"jsonrpc":"2.0","id":0,"method":"initialize","params":{"processId":8518,"clientInfo":{"name":"vscode","version":"1.52.1"},"rootPath":"$TMP","rootUri":"file://$TMP","capabilities":{"workspace":{"applyEdit":true,"workspaceEdit":{"documentChanges":true,"resourceOperations":["create","rename","delete"],"failureHandling":"textOnlyTransactional"},"didChangeConfiguration":{"dynamicRegistration":true},"didChangeWatchedFiles":{"dynamicRegistration":true},"symbol":{"dynamicRegistration":true,"symbolKind":{"valueSet":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26]}},"executeCommand":{"dynamicRegistration":true},"configuration":true,"workspaceFolders":true},"textDocument":{"publishDiagnostics":{"relatedInformation":true,"versionSupport":false,"tagSupport":{"valueSet":[1,2]}},"synchronization":{"dynamicRegistration":true,"willSave":true,"willSaveWaitUntil":true,"didSave":true},"completion":{"dynamicRegistration":true,"contextSupport":true,"completionItem":{"snippetSupport":true,"commitCharactersSupport":true,"documentationFormat":["markdown","plaintext"],"deprecatedSupport":true,"preselectSupport":true,"tagSupport":{"valueSet":[1]}},"completionItemKind":{"valueSet":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25]}},"hover":{"dynamicRegistration":true,"contentFormat":["markdown","plaintext"]},"signatureHelp":{"dynamicRegistration":true,"signatureInformation":{"documentationFormat":["markdown","plaintext"],"parameterInformation":{"labelOffsetSupport":true}},"contextSupport":true},"definition":{"dynamicRegistration":true,"linkSupport":true},"references":{"dynamicRegistration":true},"documentHighlight":{"dynamicRegistration":true},"documentSymbol":{"dynamicRegistration":true,"symbolKind":{"valueSet":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26]},"hierarchicalDocumentSymbolSupport":true},"codeAction":{"dynamicRegistration":true,"isPreferredSupport":true,"codeActionLiteralSupport":{"codeActionKind":{"valueSet":["","quickfix","refactor","refactor.extract","refactor.inline","refactor.rewrite","source","source.organizeImports"]}}},"codeLens":{"dynamicRegistration":true},"formatting":{"dynamicRegistration":true},"rangeFormatting":{"dynamicRegistration":true},"onTypeFormatting":{"dynamicRegistration":true},"rename":{"dynamicRegistration":true,"prepareSupport":true},"documentLink":{"dynamicRegistration":true,"tooltipSupport":true},"typeDefinition":{"dynamicRegistration":true,"linkSupport":true},"implementation":{"dynamicRegistration":true,"linkSupport":true},"colorProvider":{"dynamicRegistration":true},"foldingRange":{"dynamicRegistration":true,"rangeLimit":5000,"lineFoldingOnly":true},"declaration":{"dynamicRegistration":true,"linkSupport":true},"selectionRange":{"dynamicRegistration":true},"callHierarchy":{"dynamicRegistration":true},"semanticTokens":{"dynamicRegistration":true,"tokenTypes":["comment","keyword","number","regexp","operator","namespace","type","struct","class","interface","enum","typeParameter","function","member","macro","variable","parameter","property","label"],"tokenModifiers":["declaration","documentation","static","abstract","deprecated","async","readonly"]}},"window":{"workDoneProgress":true}},"trace":"off","workspaceFolders":[{"uri":"file://$TMP","name":"tmp"}]}}
+2021-01-04 14:39:27.464486 [ThreadId 5] - haskell-lsp:initializeRequestHandler: setting current dir to project root:$TMP
+Started LSP server in 0.06s
+2021-01-04 14:39:27.645967 [ThreadId 17] - Registering ide configuration: IdeConfiguration {workspaceFolders = fromList [NormalizedUri (-4736958181149980466) "file://$TMP"], clientSettings = hashed Nothing}
+2021-01-04 14:39:27.647911 [ThreadId 7] - <--2--{"result":{"capabilities":{"typeDefinitionProvider":true,"foldingRangeProvider":false,"textDocumentSync":{"openClose":true,"change":2,"save":{}},"workspace":{"workspaceFolders":{"supported":true,"changeNotifications":true}},"implementationProvider":true,"documentRangeFormattingProvider":true,"documentHighlightProvider":true,"executeCommandProvider":{"commands":["8672:class:addMinimalMethodPlaceholders","8672:eval:evalCommand","8672:ghcide:typesignature.add","8672:hlint:applyOne","8672:hlint:applyAll","8672:importLens:ImportLensCommand","8672:moduleName:edit","8672:retrie:retrieCommand","8672:tactic:tacticsAutoCommand","8672:tactic:tacticsIntrosCommand","8672:tactic:tacticsDestructCommand","8672:tactic:tacticsHomomorphismCommand","8672:tactic:tacticsDestructLambdaCaseCommand","8672:tactic:tacticsHomomorphismLambdaCaseCommand"]},"renameProvider":false,"colorProvider":false,"definitionProvider":true,"hoverProvider":true,"codeActionProvider":true,"completionProvider":{"triggerCharacters":["."],"resolveProvider":false},"codeLensProvider":{},"documentSymbolProvider":true,"documentFormattingProvider":true}},"jsonrpc":"2.0","id":0}
+2021-01-04 14:39:27.650217 [ThreadId 5] - ---> {"jsonrpc":"2.0","method":"initialized","params":{}}
+2021-01-04 14:39:27.650655 [ThreadId 5] - ---> {"jsonrpc":"2.0","method":"workspace/didChangeConfiguration","params":{"settings":{"haskell":{"hlintOn":true,"maxNumberOfProblems":100,"diagnosticsOnChange":true,"liquidOn":false,"completionSnippetsOn":true,"formatOnImportOn":true,"formattingProvider":"fourmolu","trace":{"server":"messages"},"logFile":"","languageServerVariant":"haskell-language-server","serverExecutablePath":"~/.ghcup/bin/haskell-language-server-wrapper","updateBehavior":"never-check","indentationRules":{"enabled":true}}}}}
+2021-01-04 14:39:27.651587 [ThreadId 5] - ---> {"jsonrpc":"2.0","method":"textDocument/didOpen","params":{"textDocument":{"uri":"file://$TMP/Main.hs","languageId":"haskell","version":2,"text":"module Main where\n\nimport Data.Tuple.Optics (Field1 (_1))\nimport Optics.Operators ((%~))\n\n-- >>> (\\(a,b,c) -> (succ a,b,c)) (0,2,3)\n-- (1,2,3)\n\n-- >>> (_1 %~ succ) (1, 2, 3)\n\n-- >>> someFunc\nsomeFunc :: (Int, Int, Int)\nsomeFunc = (_1 %~ succ) (1, 2, 3)\n\n-- >>> main\nmain :: IO ()\nmain = do\n  putStrLn \"Hello, Haskell!\"\n  print someFunc\n"}}}
+2021-01-04 14:39:27.651961 [ThreadId 17] - Configuration changed: Object (fromList [("haskell",Object (fromList [("logFile",String ""),("updateBehavior",String "never-check"),("hlintOn",Bool True),("formatOnImportOn",Bool True),("indentationRules",Object (fromList [("enabled",Bool True)])),("liquidOn",Bool False),("languageServerVariant",String "haskell-language-server"),("serverExecutablePath",String "~/.ghcup/bin/haskell-language-server-wrapper"),("diagnosticsOnChange",Bool True),("completionSnippetsOn",Bool True),("maxNumberOfProblems",Number 100.0),("formattingProvider",String "fourmolu"),("trace",Object (fromList [("server",String "messages")]))]))])
+2021-01-04 14:39:27.652978 [ThreadId 7] - <--2--{"jsonrpc":"2.0","params":{"registrations":[{"registerOptions":{"watchers":[{"kind":5,"globPattern":"**/*.hs"},{"kind":5,"globPattern":"**/*.hs-boot"},{"kind":5,"globPattern":"**/*.lhs"},{"kind":5,"globPattern":"**/*.lhs-boot"}]},"method":"workspace/didChangeWatchedFiles","id":"globalFileWatches"}]},"method":"client/registerCapability","id":0}
+2021-01-04 14:39:27.65549 [ThreadId 5] - ---> {"jsonrpc":"2.0","id":0,"result":null}
+2021-01-04 14:39:27.655613 [ThreadId 16] - Finishing build session(exception: AsyncCancelled)
+2021-01-04 14:39:27.656473 [ThreadId 17] - Restarting build session (aborting the previous one took 0.00s)
+2021-01-04 14:39:27.65695 [ThreadId 5] - haskell-lsp:Got reply message:"{\"jsonrpc\":\"2.0\",\"id\":0,\"result\":null}"
+2021-01-04 14:39:27.671246 [ThreadId 17] - Set files of interest to: [(NormalizedFilePath "$TMP/Main.hs",Modified)]
+2021-01-04 14:39:27.68527 [ThreadId 5] - ---> {"jsonrpc":"2.0","id":1,"method":"textDocument/documentSymbol","params":{"textDocument":{"uri":"file://$TMP/Main.hs"}}}
+2021-01-04 14:39:27.685637 [ThreadId 5] - ---> {"jsonrpc":"2.0","id":2,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file://$TMP/Main.hs"},"range":{"start":{"line":5,"character":6},"end":{"line":5,"character":6}},"context":{"diagnostics":[]}}}
+2021-01-04 14:39:27.698458 [ThreadId 17] - Restarting build session (aborting the previous one took 0.03s)
+2021-01-04 14:39:27.69839 [ThreadId 29] - Finishing build session(exception: AsyncCancelled)
+2021-01-04 14:39:27.699154 [ThreadId 17] - Opened text document: file://$TMP/Main.hs
+2021-01-04 14:39:27.704615 [ThreadId 72] - hlint:getIdeas:file:NormalizedFilePath "$TMP/Main.hs"
+2021-01-04 14:39:27.704863 [ThreadId 69] - Consulting the cradle for "Main.hs"
 Output from setting up the cradle Cradle {cradleRootDir = "$TMP", cradleOptsProg = CradleAction: Cabal}
-2020-12-13 21:24:33.204834 [ThreadId 77] - Plugin.makeCodeLens (ideLogger)
+2021-01-04 14:39:27.705821 [ThreadId 7] - <--2--{"jsonrpc":"2.0","params":{"token":0},"method":"window/workDoneProgress/create","id":1}
+2021-01-04 14:39:27.706016 [ThreadId 7] - <--2--{"jsonrpc":"2.0","params":{"value":{"kind":"begin","cancellable":false,"title":"Setting up tmp (for Main.hs)"},"token":0},"method":"$/progress"}
+2021-01-04 14:39:27.70699 [ThreadId 5] - ---> {"jsonrpc":"2.0","id":1,"result":null}
+2021-01-04 14:39:27.707096 [ThreadId 5] - haskell-lsp:Got reply message:"{\"jsonrpc\":\"2.0\",\"id\":1,\"result\":null}"
+2021-01-04 14:39:27.81052 [ThreadId 7] - <--2--{"jsonrpc":"2.0","params":{"token":"27"},"method":"window/workDoneProgress/create","id":2}
+2021-01-04 14:39:27.81072 [ThreadId 7] - <--2--{"jsonrpc":"2.0","params":{"value":{"kind":"begin","title":"Processing"},"token":"27"},"method":"$/progress"}
+2021-01-04 14:39:27.811465 [ThreadId 5] - ---> {"jsonrpc":"2.0","id":2,"result":null}
+2021-01-04 14:39:27.811607 [ThreadId 5] - haskell-lsp:Got reply message:"{\"jsonrpc\":\"2.0\",\"id\":2,\"result\":null}"
+2021-01-04 14:39:27.910853 [ThreadId 7] - <--2--{"jsonrpc":"2.0","params":{"value":{"kind":"report","message":"0/2"},"token":"27"},"method":"$/progress"}
+2021-01-04 14:39:28.115516 [ThreadId 7] - <--2--{"jsonrpc":"2.0","params":{"value":{"kind":"report","message":"1/2"},"token":"27"},"method":"$/progress"}
+2021-01-04 14:39:30.179551 [ThreadId 5] - ---> {"jsonrpc":"2.0","id":3,"method":"textDocument/codeLens","params":{"textDocument":{"uri":"file://$TMP/Main.hs"}}}
+2021-01-04 14:39:30.183291 [ThreadId 85] - Plugin.makeCodeLens (ideLogger)
+2021-01-04 14:39:30.183536 [ThreadId 85] - src/Ide/Plugin/Eval/CodeLens.hs:239:15 "fp" "$TMP/Main.hs"
 > Resolving dependencies...
-> Build profile: -w ghc-8.10.2 -O1
+> Build profile: -w ghc-8.10.3 -O1
 > In order, the following will be built (use -v for more details):
 >  - tmp-0.1.0.0 (exe:tmp) (configuration changed)
 > Configuring executable 'tmp' for tmp-0.1.0.0..
 > Preprocessing executable 'tmp' for tmp-0.1.0.0..
-2020-12-13 21:24:44.781946 [ThreadId 60] - Using interface files cache dir: /Users/xsebek/.cache/ghcide/main-ff69a3833a9952d7422f2284419b2692c79fac66
-2020-12-13 21:24:44.78215 [ThreadId 60] - Making new HscEnv[main]
-2020-12-13 21:24:44.811494 [ThreadId 99] - getClientConfigAction:clientSettings:Just (Object (fromList [("haskell",Object (fromList [("logFile",String ""),("updateBehavior",String "keep-up-to-date"),("hlintOn",Bool True),("formatOnImportOn",Bool True),("indentationRules",Object (fromList [("enabled",Bool True)])),("liquidOn",Bool False),("languageServerVariant",String "haskell-language-server"),("serverExecutablePath",String "~/.ghcup/bin/haskell-language-server-wrapper"),("diagnosticsOnChange",Bool True),("completionSnippetsOn",Bool True),("maxNumberOfProblems",Number 100.0),("formattingProvider",String "ormolu"),("trace",Object (fromList [("server",String "off")]))]))]))
-2020-12-13 21:24:44.811763 [ThreadId 99] - hlint:getIdeas:file:NormalizedFilePath "$TMP/Main.hs"
-2020-12-13 21:24:44.930067 [ThreadId 156] - finish: codeLens (took 0.12s)
-2020-12-13 21:24:44.932962 [ThreadId 150] - finish:  (took 0.00s)
-2020-12-13 21:24:44.938994 [ThreadId 162] - finish: ModuleName.ghcSession (took 0.00s)
-2020-12-13 21:24:44.94123 [ThreadId 167] - finish: ModuleName.GetParsedModule (took 0.00s)
-2020-12-13 21:25:14.135743 [ThreadId 174] - finish: runEvalCmd.ghcSession (took 0.00s)
-2020-12-13 21:25:14.137083 [ThreadId 176] - finish: runEvalCmd.getModSummary (took 0.00s)
-haskell-language-server-wrapper: callProcess: /Users/xsebek/.ghcup/bin/haskell-language-server-8.10.2 "--lsp" (exit -11): failed
-[Info  - 9:25:15 PM] Connection to server got closed. Server will restart.
-[Error - 9:25:15 PM] Request workspace/executeCommand failed.
-Error: Connection got disposed.
-	at Object.dispose (/Users/xsebek/.vscode/extensions/haskell.haskell-1.2.0/dist/extension.js:1:90964)
-	at Object.dispose (/Users/xsebek/.vscode/extensions/haskell.haskell-1.2.0/dist/extension.js:1:74243)
-	at D.handleConnectionClosed (/Users/xsebek/.vscode/extensions/haskell.haskell-1.2.0/dist/extension.js:1:74417)
-	at D.handleConnectionClosed (/Users/xsebek/.vscode/extensions/haskell.haskell-1.2.0/dist/extension.js:247:9685)
-	at t (/Users/xsebek/.vscode/extensions/haskell.haskell-1.2.0/dist/extension.js:1:72568)
-	at n.invoke (/Users/xsebek/.vscode/extensions/haskell.haskell-1.2.0/dist/extension.js:1:233221)
-	at i.fire (/Users/xsebek/.vscode/extensions/haskell.haskell-1.2.0/dist/extension.js:1:233951)
-	at G (/Users/xsebek/.vscode/extensions/haskell.haskell-1.2.0/dist/extension.js:1:82879)
-	at n.invoke (/Users/xsebek/.vscode/extensions/haskell.haskell-1.2.0/dist/extension.js:1:233221)
-	at i.fire (/Users/xsebek/.vscode/extensions/haskell.haskell-1.2.0/dist/extension.js:1:233951)
-	at t.StreamMessageWriter.fireClose (/Users/xsebek/.vscode/extensions/haskell.haskell-1.2.0/dist/extension.js:1:255393)
-	at Socket.<anonymous> (/Users/xsebek/.vscode/extensions/haskell.haskell-1.2.0/dist/extension.js:1:255760)
-	at Socket.emit (events.js:223:5)
-	at Pipe.<anonymous> (net.js:664:12)
-Found "$TMP/hie.yaml" for "$TMP/a"
-Module "$TMP/a" is loaded by Cradle: Cradle {cradleRootDir = "$TMP", cradleOptsProg = CradleAction: Cabal}
-Run entered for haskell-language-server-wrapper(haskell-language-server-wrapper) Version 0.6.0.0, Git revision 372a12e797069dc3ac4fa33dcaabe3b992999d7c (dirty) x86_64 ghc-8.10.1
-Current directory: $TMP
-Operating system: darwin
-Arguments: ["--lsp"]
-Cradle directory: $TMP
-Cradle type: Cabal
+2021-01-04 14:39:39.582916 [ThreadId 7] - <--2--{"jsonrpc":"2.0","params":{"value":{"kind":"end"},"token":0},"method":"$/progress"}
+2021-01-04 14:39:39.582782 [ThreadId 69] - Session loading result: Right (ComponentOptions {componentOptions = ["-fbuilding-cabal-package","-O0","-outputdir","$TMP/dist-newstyle/build/x86_64-osx/ghc-8.10.3/tmp-0.1.0.0/x/tmp/build/tmp/tmp-tmp","-odir","$TMP/dist-newstyle/build/x86_64-osx/ghc-8.10.3/tmp-0.1.0.0/x/tmp/build/tmp/tmp-tmp","-hidir","$TMP/dist-newstyle/build/x86_64-osx/ghc-8.10.3/tmp-0.1.0.0/x/tmp/build/tmp/tmp-tmp","-stubdir","$TMP/dist-newstyle/build/x86_64-osx/ghc-8.10.3/tmp-0.1.0.0/x/tmp/build/tmp/tmp-tmp","-i","-i$TMP/dist-newstyle/build/x86_64-osx/ghc-8.10.3/tmp-0.1.0.0/x/tmp/build/tmp/tmp-tmp","-i.","-i$TMP/dist-newstyle/build/x86_64-osx/ghc-8.10.3/tmp-0.1.0.0/x/tmp/build/tmp/autogen","-i$TMP/dist-newstyle/build/x86_64-osx/ghc-8.10.3/tmp-0.1.0.0/x/tmp/build/global-autogen","-I$TMP/dist-newstyle/build/x86_64-osx/ghc-8.10.3/tmp-0.1.0.0/x/tmp/build/tmp/autogen","-I$TMP/dist-newstyle/build/x86_64-osx/ghc-8.10.3/tmp-0.1.0.0/x/tmp/build/global-autogen","-I$TMP/dist-newstyle/build/x86_64-osx/ghc-8.10.3/tmp-0.1.0.0/x/tmp/build/tmp/tmp-tmp","-optP-include","-optP$TMP/dist-newstyle/build/x86_64-osx/ghc-8.10.3/tmp-0.1.0.0/x/tmp/build/tmp/autogen/cabal_macros.h","-hide-all-packages","-Wmissing-home-modules","-no-user-package-db","-package-db","/Users/xsebek/.cabal/store/ghc-8.10.3/package.db","-package-db","$TMP/dist-newstyle/packagedb/ghc-8.10.3","-package-db","$TMP/dist-newstyle/build/x86_64-osx/ghc-8.10.3/tmp-0.1.0.0/x/tmp/package.conf.inplace","-package-id","base-4.14.1.0","-package-id","ptcs-cr-0.3.0.1-4d591369","-XHaskell2010","./Main.hs","-hide-all-packages","-haddock"], componentRoot = "$TMP", componentDependencies = ["tmp.cabal","cabal.project","cabal.project.local"]},"/Users/xsebek/.ghcup/ghc/8.10.3/lib/ghc-8.10.3")
+2021-01-04 14:39:39.728651 [ThreadId 69] - Using interface files cache dir: ghcide
+2021-01-04 14:39:39.728799 [ThreadId 69] - Making new HscEnv[main]
+2021-01-04 14:39:39.742688 [ThreadId 69] - New Component Cache HscEnvEq: (([],Just HscEnvEq 30),fromList [("$TMP/hie.yaml",Just 2020-12-13 20:15:18.98953434 UTC),("cabal.project",Nothing),("cabal.project.local",Nothing),("tmp.cabal",Just 2020-12-13 20:17:31.68642625 UTC)])
+2021-01-04 14:39:39.74305 [ThreadId 69] - Known files updated: fromList [(TargetFile NormalizedFilePath "$TMP/Main.hs",["$TMP/Main.hs"])]
+2021-01-04 14:39:39.745114 [ThreadId 50] - Finishing build session(exception: AsyncCancelled)
+2021-01-04 14:39:39.745091 [ThreadId 69] - Restarting build session (aborting the previous one took 0.00s)
+2021-01-04 14:39:39.751328 [ThreadId 103] - hlint:getIdeas:file:NormalizedFilePath "$TMP/Main.hs"
+2021-01-04 14:39:39.754552 [ThreadId 126] - finish: getSession (took 0.01s)
+2021-01-04 14:39:39.754977 [ThreadId 85] - src/Ide/Plugin/Eval/CodeLens.hs:239:15 "preprocessor" "0.00s"
+2021-01-04 14:39:39.755761 [ThreadId 85] - src/Ide/Plugin/Eval/CodeLens.hs:239:15 "Tests" "4 tests in 4 sections 0 setups 4 lenses."
+2021-01-04 14:39:39.756288 [ThreadId 85] - src/Ide/Plugin/Eval/CodeLens.hs:239:15 "tests" "0.00s"
+2021-01-04 14:39:39.756405 [ThreadId 85] - src/Ide/Plugin/Eval/CodeLens.hs:239:15 "codeLens" "9.57s"
+2021-01-04 14:39:39.758467 [ThreadId 132] - finish: CodeAction (took 0.01s)
+2021-01-04 14:39:39.758487 [ThreadId 141] - finish: C:GetParsedModule (took 0.01s)
+2021-01-04 14:39:39.759052 [ThreadId 7] - <--2--{"result":[{"selectionRange":{"start":{"line":0,"character":7},"end":{"line":0,"character":11}},"kind":1,"children":[{"selectionRange":{"start":{"line":2,"character":0},"end":{"line":3,"character":30}},"kind":2,"children":[{"selectionRange":{"start":{"line":2,"character":0},"end":{"line":2,"character":38}},"kind":2,"name":"import Data.Tuple.Optics","range":{"start":{"line":2,"character":0},"end":{"line":2,"character":38}}},{"selectionRange":{"start":{"line":3,"character":0},"end":{"line":3,"character":30}},"kind":2,"name":"import Optics.Operators","range":{"start":{"line":3,"character":0},"end":{"line":3,"character":30}}}],"name":"imports","range":{"start":{"line":2,"character":0},"end":{"line":3,"character":30}}},{"selectionRange":{"start":{"line":12,"character":0},"end":{"line":12,"character":33}},"kind":12,"name":"someFunc","range":{"start":{"line":12,"character":0},"end":{"line":12,"character":33}}},{"selectionRange":{"start":{"line":16,"character":0},"end":{"line":18,"character":16}},"kind":12,"name":"main","range":{"start":{"line":16,"character":0},"end":{"line":18,"character":16}}}],"name":"Main","range":{"start":{"line":0,"character":0},"end":{"line":9223372036854775807,"character":0}}}],"jsonrpc":"2.0","id":1}
+2021-01-04 14:39:39.820736 [ThreadId 7] - <--2--{"jsonrpc":"2.0","params":{"value":{"kind":"report","message":"2/4"},"token":"27"},"method":"$/progress"}
+2021-01-04 14:39:39.94459 [ThreadId 138] - finish: codeLens (took 0.19s)
+2021-01-04 14:39:39.946312 [ThreadId 151] - finish:  (took 0.00s)
+2021-01-04 14:39:39.948901 [ThreadId 104] - finish: ModuleName.ghcSession (took 0.00s)
+2021-01-04 14:39:39.949967 [ThreadId 138] - finish: ModuleName.GetParsedModule (took 0.00s)
+2021-01-04 14:39:39.950566 [ThreadId 104] - finish: InitialLoad (took 0.20s)
+2021-01-04 14:39:39.95224 [ThreadId 7] - <--2--{"result":[{"command":{"command":"8672:eval:evalCommand","arguments":[{"module_":{"uri":"file://$TMP/Main.hs"},"sections":[{"sectionTests":[{"located":{"tag":"Example","testOutput":["(1,2,3)"],"testLines":[" (\\(a,b,c) -> (succ a,b,c)) (0,2,3)"]},"location":5}],"sectionLanguage":"Plain","sectionFormat":"SingleLine","sectionName":""}]}],"title":"Refresh..."},"range":{"start":{"line":5,"character":0},"end":{"line":6,"character":0}}},{"command":{"command":"8672:eval:evalCommand","arguments":[{"module_":{"uri":"file://$TMP/Main.hs"},"sections":[{"sectionTests":[{"located":{"tag":"Example","testOutput":[],"testLines":[" (_1 %~ succ) (1, 2, 3)"]},"location":8}],"sectionLanguage":"Plain","sectionFormat":"SingleLine","sectionName":""}]}],"title":"Evaluate..."},"range":{"start":{"line":8,"character":0},"end":{"line":9,"character":0}}},{"command":{"command":"8672:eval:evalCommand","arguments":[{"module_":{"uri":"file://$TMP/Main.hs"},"sections":[{"sectionTests":[{"located":{"tag":"Example","testOutput":[],"testLines":[" someFunc"]},"location":10}],"sectionLanguage":"Plain","sectionFormat":"SingleLine","sectionName":""}]}],"title":"Evaluate..."},"range":{"start":{"line":10,"character":0},"end":{"line":11,"character":0}}},{"command":{"command":"8672:eval:evalCommand","arguments":[{"module_":{"uri":"file://$TMP/Main.hs"},"sections":[{"sectionTests":[{"located":{"tag":"Example","testOutput":[],"testLines":[" main"]},"location":14}],"sectionLanguage":"Plain","sectionFormat":"SingleLine","sectionName":""}]}],"title":"Evaluate..."},"range":{"start":{"line":14,"character":0},"end":{"line":15,"character":0}}}],"jsonrpc":"2.0","id":3}
+2021-01-04 14:39:39.955711 [ThreadId 7] - <--2--{"jsonrpc":"2.0","params":{"value":{"kind":"end"},"token":"27"},"method":"$/progress"}
+2021-01-04 14:39:40.335838 [ThreadId 161] - finish: CodeAction:PackageExports (took 0.58s)
+2021-01-04 14:39:40.336315 [ThreadId 162] - finish: importLens (took 0.00s)
+2021-01-04 14:39:40.336908 [ThreadId 164] - finish: addPragma (took 0.00s)
+2021-01-04 14:39:40.337884 [ThreadId 166] - finish: retrie (took 0.00s)
+2021-01-04 14:39:40.338342 [ThreadId 168] - finish: tactic (took 0.00s)
+2021-01-04 14:39:40.339186 [ThreadId 174] - finish: tactic (took 0.00s)
+2021-01-04 14:39:40.339378 [ThreadId 175] - finish: tactic (took 0.00s)
+2021-01-04 14:39:40.339856 [ThreadId 7] - <--2--{"result":[],"jsonrpc":"2.0","id":2}
+2021-01-04 14:40:29.282464 [ThreadId 5] - ---> {"jsonrpc":"2.0","method":"window/workDoneProgress/cancel","params":{"token":2}}
+2021-01-04 14:40:31.77667 [ThreadId 5] - ---> {"jsonrpc":"2.0","id":4,"method":"textDocument/codeLens","params":{"textDocument":{"uri":"file://$TMP/Main.hs"}}}
+2021-01-04 14:40:31.777555 [ThreadId 180] - Plugin.makeCodeLens (ideLogger)
+2021-01-04 14:40:31.777817 [ThreadId 180] - src/Ide/Plugin/Eval/CodeLens.hs:239:15 "fp" "$TMP/Main.hs"
+2021-01-04 14:40:31.778975 [ThreadId 181] - finish: getSession (took 0.00s)
+2021-01-04 14:40:31.779122 [ThreadId 180] - src/Ide/Plugin/Eval/CodeLens.hs:239:15 "preprocessor" "0.00s"
+2021-01-04 14:40:31.779298 [ThreadId 180] - src/Ide/Plugin/Eval/CodeLens.hs:239:15 "Tests" "4 tests in 4 sections 0 setups 4 lenses."
+2021-01-04 14:40:31.779539 [ThreadId 180] - src/Ide/Plugin/Eval/CodeLens.hs:239:15 "tests" "0.00s"
+2021-01-04 14:40:31.779658 [ThreadId 180] - src/Ide/Plugin/Eval/CodeLens.hs:239:15 "codeLens" "0.00s"
+2021-01-04 14:40:31.780474 [ThreadId 183] - finish: codeLens (took 0.00s)
+2021-01-04 14:40:31.781912 [ThreadId 185] - finish:  (took 0.00s)
+2021-01-04 14:40:31.782881 [ThreadId 187] - finish: ModuleName.ghcSession (took 0.00s)
+2021-01-04 14:40:31.785398 [ThreadId 189] - finish: ModuleName.GetParsedModule (took 0.00s)
+2021-01-04 14:40:31.786111 [ThreadId 7] - <--2--{"result":[{"command":{"command":"8672:eval:evalCommand","arguments":[{"module_":{"uri":"file://$TMP/Main.hs"},"sections":[{"sectionTests":[{"located":{"tag":"Example","testOutput":["(1,2,3)"],"testLines":[" (\\(a,b,c) -> (succ a,b,c)) (0,2,3)"]},"location":5}],"sectionLanguage":"Plain","sectionFormat":"SingleLine","sectionName":""}]}],"title":"Refresh..."},"range":{"start":{"line":5,"character":0},"end":{"line":6,"character":0}}},{"command":{"command":"8672:eval:evalCommand","arguments":[{"module_":{"uri":"file://$TMP/Main.hs"},"sections":[{"sectionTests":[{"located":{"tag":"Example","testOutput":[],"testLines":[" (_1 %~ succ) (1, 2, 3)"]},"location":8}],"sectionLanguage":"Plain","sectionFormat":"SingleLine","sectionName":""}]}],"title":"Evaluate..."},"range":{"start":{"line":8,"character":0},"end":{"line":9,"character":0}}},{"command":{"command":"8672:eval:evalCommand","arguments":[{"module_":{"uri":"file://$TMP/Main.hs"},"sections":[{"sectionTests":[{"located":{"tag":"Example","testOutput":[],"testLines":[" someFunc"]},"location":10}],"sectionLanguage":"Plain","sectionFormat":"SingleLine","sectionName":""}]}],"title":"Evaluate..."},"range":{"start":{"line":10,"character":0},"end":{"line":11,"character":0}}},{"command":{"command":"8672:eval:evalCommand","arguments":[{"module_":{"uri":"file://$TMP/Main.hs"},"sections":[{"sectionTests":[{"located":{"tag":"Example","testOutput":[],"testLines":[" main"]},"location":14}],"sectionLanguage":"Plain","sectionFormat":"SingleLine","sectionName":""}]}],"title":"Evaluate..."},"range":{"start":{"line":14,"character":0},"end":{"line":15,"character":0}}}],"jsonrpc":"2.0","id":4}
 
-Tool versions found on the $PATH
-cabal:		3.2.0.0
-stack:		Not found
-ghc:		8.10.2
-
-
-Consulting the cradle to get project GHC version...
-Project GHC version: 8.10.2
-haskell-language-server exe candidates: ["haskell-language-server-8.10.2","haskell-language-server-8.10","haskell-language-server"]
-Launching haskell-language-server exe at:/Users/xsebek/.ghcup/bin/haskell-language-server-8.10.2
-haskell-language-server version: 0.6.0.0 (GHC: 8.10.2) (PATH: /Users/xsebek/.ghcup/bin/haskell-language-server-8.10.2~0.6.0) (GIT hash: 372a12e797069dc3ac4fa33dcaabe3b992999d7c)
-Starting (haskell-language-server)LSP server...
-  with arguments: LspArguments {argLSP = True, argsCwd = Nothing, argFiles = [], argsShakeProfiling = Nothing, argsTesting = False, argsExamplePlugin = False, argsDebugOn = False, argsLogFile = Nothing, argsThreads = 0, argsProjectGhcVersion = False}
-  with plugins: [PluginId "brittany",PluginId "eval",PluginId "floskell",PluginId "fourmolu",PluginId "ghcide",PluginId "hlint",PluginId "importLens",PluginId "moduleName",PluginId "ormolu",PluginId "pragmas",PluginId "retrie",PluginId "stylish-haskell",PluginId "tactic"]
-  in directory: $TMP
-If you are seeing this in a terminal, you probably should have run ghcide WITHOUT the --lsp option!
- Started LSP server in 0.02s
-2020-12-13 21:25:16.397384 [ThreadId 21] - Registering ide configuration: IdeConfiguration {workspaceFolders = fromList [NormalizedUri (-4736958181149980466) "file://$TMP"], clientSettings = hashed Nothing}
-2020-12-13 21:25:16.399142 [ThreadId 21] - Configuration changed: Object (fromList [("haskell",Object (fromList [("logFile",String ""),("updateBehavior",String "keep-up-to-date"),("hlintOn",Bool True),("formatOnImportOn",Bool True),("indentationRules",Object (fromList [("enabled",Bool True)])),("liquidOn",Bool False),("languageServerVariant",String "haskell-language-server"),("serverExecutablePath",String "~/.ghcup/bin/haskell-language-server-wrapper"),("diagnosticsOnChange",Bool True),("completionSnippetsOn",Bool True),("maxNumberOfProblems",Number 100.0),("formattingProvider",String "ormolu"),("trace",Object (fromList [("server",String "off")]))]))])
-2020-12-13 21:25:16.399932 [ThreadId 21] - Opened text document: file://$TMP/Main.hs
-2020-12-13 21:25:16.402572 [ThreadId 60] - Consulting the cradle for "Main.hs"
-2020-12-13 21:25:16.402803 [ThreadId 62] - getClientConfigAction:clientSettings:Just (Object (fromList [("haskell",Object (fromList [("logFile",String ""),("updateBehavior",String "keep-up-to-date"),("hlintOn",Bool True),("formatOnImportOn",Bool True),("indentationRules",Object (fromList [("enabled",Bool True)])),("liquidOn",Bool False),("languageServerVariant",String "haskell-language-server"),("serverExecutablePath",String "~/.ghcup/bin/haskell-language-server-wrapper"),("diagnosticsOnChange",Bool True),("completionSnippetsOn",Bool True),("maxNumberOfProblems",Number 100.0),("formattingProvider",String "ormolu"),("trace",Object (fromList [("server",String "off")]))]))]))
-2020-12-13 21:25:16.402983 [ThreadId 62] - hlint:getIdeas:file:NormalizedFilePath "$TMP/Main.hs"
-Output from setting up the cradle Cradle {cradleRootDir = "$TMP", cradleOptsProg = CradleAction: Cabal}
-2020-12-13 21:25:18.90913 [ThreadId 79] - Plugin.makeCodeLens (ideLogger)
-> Resolving dependencies...
-> Build profile: -w ghc-8.10.2 -O1
-> In order, the following will be built (use -v for more details):
->  - tmp-0.1.0.0 (exe:tmp) (configuration changed)
-> Configuring executable 'tmp' for tmp-0.1.0.0..
-> Preprocessing executable 'tmp' for tmp-0.1.0.0..
-2020-12-13 21:25:28.861427 [ThreadId 60] - Using interface files cache dir: /Users/xsebek/.cache/ghcide/main-ff69a3833a9952d7422f2284419b2692c79fac66
-2020-12-13 21:25:28.861615 [ThreadId 60] - Making new HscEnv[main]
-2020-12-13 21:25:28.884143 [ThreadId 99] - getClientConfigAction:clientSettings:Just (Object (fromList [("haskell",Object (fromList [("logFile",String ""),("updateBehavior",String "keep-up-to-date"),("hlintOn",Bool True),("formatOnImportOn",Bool True),("indentationRules",Object (fromList [("enabled",Bool True)])),("liquidOn",Bool False),("languageServerVariant",String "haskell-language-server"),("serverExecutablePath",String "~/.ghcup/bin/haskell-language-server-wrapper"),("diagnosticsOnChange",Bool True),("completionSnippetsOn",Bool True),("maxNumberOfProblems",Number 100.0),("formattingProvider",String "ormolu"),("trace",Object (fromList [("server",String "off")]))]))]))
-2020-12-13 21:25:28.884398 [ThreadId 99] - hlint:getIdeas:file:NormalizedFilePath "$TMP/Main.hs"
-2020-12-13 21:25:28.996523 [ThreadId 162] - finish: codeLens (took 0.11s)
-2020-12-13 21:25:28.997884 [ThreadId 163] - finish:  (took 0.00s)
-2020-12-13 21:25:28.999251 [ThreadId 167] - finish: ModuleName.ghcSession (took 0.00s)
-2020-12-13 21:25:29.001188 [ThreadId 158] - finish: ModuleName.GetParsedModule (took 0.00s)
-2020-12-13 21:26:39.739229 [ThreadId 175] - Plugin.makeCodeLens (ideLogger)
-2020-12-13 21:26:39.741055 [ThreadId 178] - finish:  (took 0.00s)
-2020-12-13 21:26:39.740932 [ThreadId 176] - finish: codeLens (took 0.00s)
-2020-12-13 21:26:39.742075 [ThreadId 180] - finish: ModuleName.ghcSession (took 0.00s)
-2020-12-13 21:26:39.74379 [ThreadId 182] - finish: ModuleName.GetParsedModule (took 0.00s)
-2020-12-13 21:26:58.627111 [ThreadId 187] - Plugin.makeCodeLens (ideLogger)
-2020-12-13 21:26:58.628669 [ThreadId 188] - finish: codeLens (took 0.00s)
-2020-12-13 21:26:58.628772 [ThreadId 190] - finish:  (took 0.00s)
-2020-12-13 21:26:58.629392 [ThreadId 192] - finish: ModuleName.ghcSession (took 0.00s)
-2020-12-13 21:26:58.632506 [ThreadId 193] - finish: ModuleName.GetParsedModule (took 0.00s)
-2020-12-13 21:26:59.077563 [ThreadId 199] - finish: CodeAction (took 0.00s)
-2020-12-13 21:26:59.57427 [ThreadId 204] - finish: CodeAction:PackageExports (took 0.50s)
-2020-12-13 21:26:59.57726 [ThreadId 205] - finish: importLens (took 0.00s)
-2020-12-13 21:26:59.57794 [ThreadId 207] - finish: retrie (took 0.00s)
-2020-12-13 21:26:59.579725 [ThreadId 209] - finish: tactic (took 0.00s)
-2020-12-13 21:26:59.580187 [ThreadId 215] - finish: tactic (took 0.00s)
-2020-12-13 21:26:59.580673 [ThreadId 216] - finish: tactic (took 0.00s)
-2020-12-13 21:27:00.148818 [ThreadId 21] - Modified text document: file://$TMP/Main.hs
-2020-12-13 21:27:00.15631 [ThreadId 274] - getClientConfigAction:clientSettings:Just (Object (fromList [("haskell",Object (fromList [("logFile",String ""),("updateBehavior",String "keep-up-to-date"),("hlintOn",Bool True),("formatOnImportOn",Bool True),("indentationRules",Object (fromList [("enabled",Bool True)])),("liquidOn",Bool False),("languageServerVariant",String "haskell-language-server"),("serverExecutablePath",String "~/.ghcup/bin/haskell-language-server-wrapper"),("diagnosticsOnChange",Bool True),("completionSnippetsOn",Bool True),("maxNumberOfProblems",Number 100.0),("formattingProvider",String "ormolu"),("trace",Object (fromList [("server",String "off")]))]))]))
-2020-12-13 21:27:00.156482 [ThreadId 274] - hlint:getIdeas:file:NormalizedFilePath "$TMP/Main.hs"
-2020-12-13 21:27:00.336138 [ThreadId 21] - Modified text document: file://$TMP/Main.hs
-2020-12-13 21:27:00.340656 [ThreadId 327] - getClientConfigAction:clientSettings:Just (Object (fromList [("haskell",Object (fromList [("logFile",String ""),("updateBehavior",String "keep-up-to-date"),("hlintOn",Bool True),("formatOnImportOn",Bool True),("indentationRules",Object (fromList [("enabled",Bool True)])),("liquidOn",Bool False),("languageServerVariant",String "haskell-language-server"),("serverExecutablePath",String "~/.ghcup/bin/haskell-language-server-wrapper"),("diagnosticsOnChange",Bool True),("completionSnippetsOn",Bool True),("maxNumberOfProblems",Number 100.0),("formattingProvider",String "ormolu"),("trace",Object (fromList [("server",String "off")]))]))]))
-2020-12-13 21:27:00.340875 [ThreadId 327] - hlint:getIdeas:file:NormalizedFilePath "$TMP/Main.hs"
-2020-12-13 21:27:00.585369 [ThreadId 346] - finish: CodeAction (took 0.00s)
-2020-12-13 21:27:00.586088 [ThreadId 351] - finish: CodeAction:PackageExports (took 0.00s)
-2020-12-13 21:27:00.586755 [ThreadId 352] - finish: importLens (took 0.00s)
-2020-12-13 21:27:00.587411 [ThreadId 354] - finish: retrie (took 0.00s)
-2020-12-13 21:27:00.588425 [ThreadId 356] - finish: tactic (took 0.00s)
-2020-12-13 21:27:00.590219 [ThreadId 362] - finish: tactic (took 0.00s)
-2020-12-13 21:27:00.590437 [ThreadId 363] - finish: tactic (took 0.00s)
-2020-12-13 21:27:00.636018 [ThreadId 21] - Modified text document: file://$TMP/Main.hs
-2020-12-13 21:27:00.639848 [ThreadId 408] - getClientConfigAction:clientSettings:Just (Object (fromList [("haskell",Object (fromList [("logFile",String ""),("updateBehavior",String "keep-up-to-date"),("hlintOn",Bool True),("formatOnImportOn",Bool True),("indentationRules",Object (fromList [("enabled",Bool True)])),("liquidOn",Bool False),("languageServerVariant",String "haskell-language-server"),("serverExecutablePath",String "~/.ghcup/bin/haskell-language-server-wrapper"),("diagnosticsOnChange",Bool True),("completionSnippetsOn",Bool True),("maxNumberOfProblems",Number 100.0),("formattingProvider",String "ormolu"),("trace",Object (fromList [("server",String "off")]))]))]))
-2020-12-13 21:27:00.640068 [ThreadId 408] - hlint:getIdeas:file:NormalizedFilePath "$TMP/Main.hs"
-2020-12-13 21:27:00.852964 [ThreadId 21] - Modified text document: file://$TMP/Main.hs
-2020-12-13 21:27:00.857884 [ThreadId 484] - getClientConfigAction:clientSettings:Just (Object (fromList [("haskell",Object (fromList [("logFile",String ""),("updateBehavior",String "keep-up-to-date"),("hlintOn",Bool True),("formatOnImportOn",Bool True),("indentationRules",Object (fromList [("enabled",Bool True)])),("liquidOn",Bool False),("languageServerVariant",String "haskell-language-server"),("serverExecutablePath",String "~/.ghcup/bin/haskell-language-server-wrapper"),("diagnosticsOnChange",Bool True),("completionSnippetsOn",Bool True),("maxNumberOfProblems",Number 100.0),("formattingProvider",String "ormolu"),("trace",Object (fromList [("server",String "off")]))]))]))
-2020-12-13 21:27:00.85811 [ThreadId 484] - hlint:getIdeas:file:NormalizedFilePath "$TMP/Main.hs"
-2020-12-13 21:27:01.063262 [ThreadId 21] - Modified text document: file://$TMP/Main.hs
-2020-12-13 21:27:01.06351 [ThreadId 539] - getClientConfigAction:clientSettings:Just (Object (fromList [("haskell",Object (fromList [("logFile",String ""),("updateBehavior",String "keep-up-to-date"),("hlintOn",Bool True),("formatOnImportOn",Bool True),("indentationRules",Object (fromList [("enabled",Bool True)])),("liquidOn",Bool False),("languageServerVariant",String "haskell-language-server"),("serverExecutablePath",String "~/.ghcup/bin/haskell-language-server-wrapper"),("diagnosticsOnChange",Bool True),("completionSnippetsOn",Bool True),("maxNumberOfProblems",Number 100.0),("formattingProvider",String "ormolu"),("trace",Object (fromList [("server",String "off")]))]))]))
-2020-12-13 21:27:01.063727 [ThreadId 539] - hlint:getIdeas:file:NormalizedFilePath "$TMP/Main.hs"
-2020-12-13 21:27:01.250817 [ThreadId 21] - Modified text document: file://$TMP/Main.hs
-2020-12-13 21:27:01.257244 [ThreadId 594] - getClientConfigAction:clientSettings:Just (Object (fromList [("haskell",Object (fromList [("logFile",String ""),("updateBehavior",String "keep-up-to-date"),("hlintOn",Bool True),("formatOnImportOn",Bool True),("indentationRules",Object (fromList [("enabled",Bool True)])),("liquidOn",Bool False),("languageServerVariant",String "haskell-language-server"),("serverExecutablePath",String "~/.ghcup/bin/haskell-language-server-wrapper"),("diagnosticsOnChange",Bool True),("completionSnippetsOn",Bool True),("maxNumberOfProblems",Number 100.0),("formattingProvider",String "ormolu"),("trace",Object (fromList [("server",String "off")]))]))]))
-2020-12-13 21:27:01.257485 [ThreadId 594] - hlint:getIdeas:file:NormalizedFilePath "$TMP/Main.hs"
-2020-12-13 21:27:01.500874 [ThreadId 616] - finish: CodeAction (took 0.00s)
-2020-12-13 21:27:01.501233 [ThreadId 621] - finish: CodeAction:PackageExports (took 0.00s)
-2020-12-13 21:27:01.502302 [ThreadId 622] - finish: importLens (took 0.00s)
-2020-12-13 21:27:01.503038 [ThreadId 624] - finish: retrie (took 0.00s)
-2020-12-13 21:27:01.506951 [ThreadId 626] - finish: tactic (took 0.00s)
-2020-12-13 21:27:01.507936 [ThreadId 632] - finish: tactic (took 0.00s)
-2020-12-13 21:27:01.508808 [ThreadId 633] - finish: tactic (took 0.00s)
-2020-12-13 21:27:01.514764 [ThreadId 21] - Modified text document: file://$TMP/Main.hs
-2020-12-13 21:27:01.521505 [ThreadId 680] - getClientConfigAction:clientSettings:Just (Object (fromList [("haskell",Object (fromList [("logFile",String ""),("updateBehavior",String "keep-up-to-date"),("hlintOn",Bool True),("formatOnImportOn",Bool True),("indentationRules",Object (fromList [("enabled",Bool True)])),("liquidOn",Bool False),("languageServerVariant",String "haskell-language-server"),("serverExecutablePath",String "~/.ghcup/bin/haskell-language-server-wrapper"),("diagnosticsOnChange",Bool True),("completionSnippetsOn",Bool True),("maxNumberOfProblems",Number 100.0),("formattingProvider",String "ormolu"),("trace",Object (fromList [("server",String "off")]))]))]))
-2020-12-13 21:27:01.521728 [ThreadId 680] - hlint:getIdeas:file:NormalizedFilePath "$TMP/Main.hs"
-2020-12-13 21:27:04.015942 [ThreadId 698] - Plugin.makeCodeLens (ideLogger)
-2020-12-13 21:27:04.018766 [ThreadId 699] - finish: codeLens (took 0.00s)
-2020-12-13 21:27:04.021146 [ThreadId 705] - finish:  (took 0.00s)
-2020-12-13 21:27:04.022296 [ThreadId 706] - finish: ModuleName.ghcSession (took 0.00s)
-2020-12-13 21:27:04.024276 [ThreadId 708] - finish: ModuleName.GetParsedModule (took 0.00s)
-2020-12-13 21:27:10.797983 [ThreadId 715] - finish: runEvalCmd.ghcSession (took 0.00s)
-2020-12-13 21:27:10.798745 [ThreadId 717] - finish: runEvalCmd.getModSummary (took 0.00s)
-2020-12-13 21:27:11.785152 [ThreadId 21] - Modified text document: file://$TMP/Main.hs
-2020-12-13 21:27:11.79103 [ThreadId 774] - getClientConfigAction:clientSettings:Just (Object (fromList [("haskell",Object (fromList [("logFile",String ""),("updateBehavior",String "keep-up-to-date"),("hlintOn",Bool True),("formatOnImportOn",Bool True),("indentationRules",Object (fromList [("enabled",Bool True)])),("liquidOn",Bool False),("languageServerVariant",String "haskell-language-server"),("serverExecutablePath",String "~/.ghcup/bin/haskell-language-server-wrapper"),("diagnosticsOnChange",Bool True),("completionSnippetsOn",Bool True),("maxNumberOfProblems",Number 100.0),("formattingProvider",String "ormolu"),("trace",Object (fromList [("server",String "off")]))]))]))
-2020-12-13 21:27:11.791325 [ThreadId 774] - hlint:getIdeas:file:NormalizedFilePath "$TMP/Main.hs"
-2020-12-13 21:27:12.039183 [ThreadId 796] - finish: CodeAction (took 0.00s)
-2020-12-13 21:27:12.04244 [ThreadId 801] - finish: CodeAction:PackageExports (took 0.00s)
-2020-12-13 21:27:12.043273 [ThreadId 802] - finish: importLens (took 0.00s)
-2020-12-13 21:27:12.043901 [ThreadId 804] - finish: retrie (took 0.00s)
-2020-12-13 21:27:12.044498 [ThreadId 806] - finish: tactic (took 0.00s)
-2020-12-13 21:27:12.045452 [ThreadId 812] - finish: tactic (took 0.00s)
-2020-12-13 21:27:12.046114 [ThreadId 813] - finish: tactic (took 0.00s)
-2020-12-13 21:27:14.282536 [ThreadId 818] - Plugin.makeCodeLens (ideLogger)
-2020-12-13 21:27:14.283323 [ThreadId 819] - finish: codeLens (took 0.00s)
-2020-12-13 21:27:14.287565 [ThreadId 825] - finish:  (took 0.00s)
-2020-12-13 21:27:14.289957 [ThreadId 826] - finish: ModuleName.ghcSession (took 0.00s)
-2020-12-13 21:27:14.292058 [ThreadId 828] - finish: ModuleName.GetParsedModule (took 0.00s)
-2020-12-13 21:27:38.906519 [ThreadId 840] - finish: Formatter (took 0.00s)
-2020-12-13 21:27:38.909044 [ThreadId 843] - finish: Ormolu (took 0.00s)
-2020-12-13 21:27:39.143461 [ThreadId 21] - Saved text document: file://$TMP/Main.hs
-2020-12-13 21:27:39.157767 [ThreadId 890] - Typechecking reverse dependencies forNormalizedFilePath "$TMP/Main.hs": []
-2020-12-13 21:27:40.436498 [ThreadId 21] - Closed text document: file://$TMP/Main.hs
-2020-12-13 21:27:40.437403 [ThreadId 898] - Typechecking reverse dependencies forNormalizedFilePath "$TMP/Main.hs": []

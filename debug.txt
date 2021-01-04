@@ -1,6 +1,6 @@
 Found "$TMP/hie.yaml" for "$TMP/a"
 Module "$TMP/a" is loaded by Cradle: Cradle {cradleRootDir = "$TMP", cradleOptsProg = CradleAction: Cabal}
-Run entered for haskell-language-server-wrapper(haskell-language-server-wrapper) Version 0.6.0.0, Git revision 372a12e797069dc3ac4fa33dcaabe3b992999d7c (dirty) x86_64 ghc-8.10.1
+Run entered for haskell-language-server-wrapper(haskell-language-server-wrapper) Version 0.8.0.0, Git revision eb58f13f7b8e4f9bc771af30ff9fd82dc4309ff5 (dirty) x86_64 ghc-8.10.1
 Current directory: $TMP
 Operating system: darwin
 Arguments: ["--debug","."]
@@ -10,21 +10,21 @@ Cradle type: Cabal
 Tool versions found on the $PATH
 cabal:		3.2.0.0
 stack:		Not found
-ghc:		8.10.2
+ghc:		8.10.3
 
 
 Consulting the cradle to get project GHC version...
-Project GHC version: 8.10.2
-haskell-language-server exe candidates: ["haskell-language-server-8.10.2","haskell-language-server-8.10","haskell-language-server"]
-Launching haskell-language-server exe at:/Users/xsebek/.ghcup/bin/haskell-language-server-8.10.2
-haskell-language-server version: 0.6.0.0 (GHC: 8.10.2) (PATH: /Users/xsebek/.ghcup/bin/haskell-language-server-8.10.2~0.6.0) (GIT hash: 372a12e797069dc3ac4fa33dcaabe3b992999d7c)
+Project GHC version: 8.10.3
+haskell-language-server exe candidates: ["haskell-language-server-8.10.3","haskell-language-server-8.10","haskell-language-server"]
+Launching haskell-language-server exe at:/Users/xsebek/.ghcup/bin/haskell-language-server-8.10.3
+haskell-language-server version: 0.8.0.0 (GHC: 8.10.3) (PATH: /Users/xsebek/.ghcup/bin/haskell-language-server-8.10.3~0.8.0) (GIT hash: eb58f13f7b8e4f9bc771af30ff9fd82dc4309ff5)
 (haskell-language-server)Ghcide setup tester in $TMP.
 Report bugs at https://github.com/haskell/haskell-language-server/issues
 
 Tool versions found on the $PATH
 cabal:		3.2.0.0
 stack:		Not found
-ghc:		8.10.2
+ghc:		8.10.3
 
 
 Step 1/4: Finding files to test in $TMP
@@ -39,13 +39,13 @@ Step 4/4: Type checking the files
 [INFO] Consulting the cradle for "Main.hs"
 Output from setting up the cradle Cradle {cradleRootDir = "$TMP", cradleOptsProg = CradleAction: Cabal}
 > Resolving dependencies...
-> Build profile: -w ghc-8.10.2 -O1
+> Build profile: -w ghc-8.10.3 -O1
 > In order, the following will be built (use -v for more details):
 >  - tmp-0.1.0.0 (exe:tmp) (configuration changed)
 > Configuring executable 'tmp' for tmp-0.1.0.0..
 > Preprocessing executable 'tmp' for tmp-0.1.0.0..
-[INFO] Using interface files cache dir: /Users/xsebek/.cache/ghcide/main-ff69a3833a9952d7422f2284419b2692c79fac66
+[INFO] Using interface files cache dir: ghcide
 [INFO] Making new HscEnv[main]
 
-[INFO] finish: User TypeCheck (took 0.21s)
-Completed (1 file worked, 0 files failed)
+[INFO] finish: User TypeCheck (took 0.11s)Completed (1 file worked, 0 files failed)
+
